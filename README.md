@@ -6,27 +6,27 @@ Pre-Main Page:
 
 Upon volume slider adjustment, the user will be provided with a corresponding volume level ping audio to let the user hear their current volume level.
 
-![PreMainScreen](https://github.com/seanieboi6687/JSP_BmwExperience/assets/101304652/1412d6f0-f884-441f-ab1a-a2c97c7e600c)
+![PreMainScreen](https://github.com/seanieboi6687/JSP_BmwExperience/assets/101304652/68dc6322-f61f-4ddd-a68a-9550fe96e777)
 
 Main Page:
 
 After a short video, not shown on the screenshot, the 'Start Stop' button will fade in on the screen. The user will click on the 'Start Stop' button, which will be followed up by a roaring engine sound.
 
-![pushtostartpage](https://github.com/seanieboi6687/JSP_BmwExperience/assets/101304652/ad5a273d-da2f-4592-91d2-24ce0fb26e20)
+![pushtostartpage](https://github.com/seanieboi6687/JSP_BmwExperience/assets/101304652/dcfc8074-63c8-4309-b3f5-870c76748cde)
 
 Model Selection Page:
 
-![Selectionpage](https://github.com/seanieboi6687/JSP_BmwExperience/assets/101304652/c983343a-af15-4448-b3c8-f83ceeb54f48)
+![Selectionpage](https://github.com/seanieboi6687/JSP_BmwExperience/assets/101304652/bb75fe6b-44e5-49a5-a332-ac61fe289064)
 
 One of the M3 model Pages:
 
 There will be layers of images to implement a parallax scrolling effect.
 
-![m3screen](https://github.com/seanieboi6687/JSP_BmwExperience/assets/101304652/55954deb-34ae-43f9-bd5c-4351c84190a5)
+![m3screen](https://github.com/seanieboi6687/JSP_BmwExperience/assets/101304652/6dd64838-5538-4582-b539-87856a865c83)
 
 Main Car Display Page Wireframe:
 
-![Screenshot 2023-08-23 at 9 20 29 PM](https://github.com/seanieboi6687/JSP_BmwExperience/assets/101304652/68e5ccdd-fd12-49c1-abd6-267d296e6519)
+![Screenshot 2023-08-23 at 9 20 29 PM](https://github.com/seanieboi6687/JSP_BmwExperience/assets/101304652/65ba2cc4-1df3-4930-bb3d-86c77b8b4b29)
 
 Functionality & MVPs:
 
