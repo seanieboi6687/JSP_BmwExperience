@@ -1,8 +1,14 @@
-import Example from "./scripts/example"; // from relative path
+function renderInitialView(){
+    const preMain = document.getElementById('pre-main');
+    const heading = document.createElement('h1')
+    const warning = document.createElement('p')
+    const img = document.createElement('img')
+    img.setAttribute('id', 'pre-main-drl')
 
-document.addEventListener("DOMContentLoaded", function(){
-    console.log("Hellow World"); // start application AFTER loading everything in document
+    heading.textContent = 'Welcome to your BMW Ultimate Experience'
+    warning.textContent = 'Please take this time to adjust your volume before moving forward'
+    preMain.appendChild(heading)
+    heading.appendChild(warning)
+}
 
-    const main = document.getElementById("main");
-    new Example(main);
-});
+renderInitialView();
