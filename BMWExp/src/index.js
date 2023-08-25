@@ -60,7 +60,7 @@ document.addEventListener('click', function () {
 });
 
 function playClickSound() {
-    const audio = new Audio('Assets/click.mp3');
+    const audio = new Audio('Assets/click.mp3'); 
     audio.play();
 }
 
