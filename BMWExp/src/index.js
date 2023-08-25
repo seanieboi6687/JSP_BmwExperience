@@ -55,5 +55,13 @@ function renderInitialView(){
     }
 }
 
+document.addEventListener('click', function () {
+    playClickSound();
+});
+
+function playClickSound() {
+    const audio = new Audio('Assets/click.mp3');
+    audio.play();
+}
 
 renderInitialView();
