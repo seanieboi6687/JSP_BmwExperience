@@ -37,12 +37,17 @@ function renderInitialView(){
     enterButton.addEventListener('click', function () {
         preMain.innerHTML = '';
         ptsView(preMain);
+        const audio = new Audio('Assets/backgroundmusic.mp3');
+        fadeInAudio(audio, 5);
+        audio.play();
     });
 
     function ptsView(container) {
-        const ptsview = document.createElement('div'); // Corrected tag name to 'div'
+        const ptsview = document.getElementById('pts');
         const video = document.createElement('video');
-        ptsview.setAttribute('class', 'pts-to-start'); // Corrected class name
+        const ptsImg = document.createElement('img')
+        const ptsButton = document.createElement('a')
+        ptsview.setAttribute('class', 'pts-to-start');
         video.setAttribute('class', 'background-vid');
         video.src = "Assets/introvideo.mp4";
         video.alt = "introduction video";
@@ -51,7 +56,7 @@ function renderInitialView(){
         video.autoplay = true;
 
         ptsview.appendChild(video);
-        container.appendChild(ptsview); // Append ptsview to the container
+        container.appendChild(ptsview);
     }
 }
 
@@ -62,6 +67,34 @@ document.addEventListener('click', function () {
 function playClickSound() {
     const audio = new Audio('Assets/click.mp3'); 
     audio.play();
+}
+
+function backgroundMusic() {
+    const music = document.createElement('music')
+    music.setAttribute('id', 'music')
+    music.setAttribute('loop', 'true')
+    music.src = 'Assets/backgroundmusic.mp3'
+    music.play();
+}
+
+function fadeInAudio(audio, duration) {
+    const fadeDuration = duration * 1000;
+    const fadeSteps = 50;
+    const initialVolume = 0;
+
+    audio.volume = initialVolume;
+
+    const volumeStep = 1 / fadeSteps;
+    let currentStep = 0;
+
+    const fadeInInterval = setInterval(() => {
+        if (currentStep >= fadeSteps) {
+            clearInterval(fadeInInterval);
+        } else {
+            currentStep++;
+            audio.volume = currentStep * volumeStep;
+        }
+    }, fadeDuration / fadeSteps);
 }
 
 renderInitialView();
