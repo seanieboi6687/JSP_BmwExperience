@@ -36,65 +36,132 @@ function renderInitialView(){
 
     enterButton.addEventListener('click', function () {
         preMain.innerHTML = '';
-        ptsView(preMain);
-        const audio = new Audio('Assets/backgroundmusic.mp3');
-        fadeInAudio(audio, 5);
-        audio.play();
+        ptsView();
     });
 
-    function ptsView(container) {
+    function ptsView() {
         const ptsview = document.getElementById('pts');
         const video = document.createElement('video');
+        const msg = document.createElement('h1')
         const ptsImg = document.createElement('img')
         const ptsButton = document.createElement('a')
+        const ptsButton1 = document.createElement('img')
+        msg.setAttribute('class', 'please-start')
+        ptsButton1.src = 'Assets/ptsbutton.png'
         ptsview.setAttribute('class', 'pts-to-start');
+        ptsButton1.setAttribute('class', 'ptsbutton')
         video.setAttribute('class', 'background-vid');
         video.src = "Assets/introvideo.mp4";
         video.alt = "introduction video";
 
+        msg.textContent = 'Please push the button start your experience'
+
         video.playbackRate = 0.7
         video.autoplay = true;
 
+        backgroundMusic();
+
         ptsview.appendChild(video);
-        container.appendChild(ptsview);
+        ptsview.appendChild(ptsButton);
+        video.addEventListener('ended', function () {
+            const anchor = document.createElement('a')
+            ptsButton.appendChild(anchor)
+            anchor.appendChild(ptsButton1);
+            setTimeout(ptsButton.appendChild(msg), 3000);
+        });
+
+        ptsButton1.addEventListener('click', function () {
+            const audio = new Audio('Assets/enginesound.mp3')
+            audio.play();
+            setTimeout(() => {
+                fadeOutAudio(audio, 3);
+                setTimeout(() => {
+                    ptsview.innerHTML = '';
+                    selectionView();
+                }, 3000);
+            }, 3000);
+        });
+
+        function selectionView(){
+            const selectionPage = document.getElementById('selection')
+            const heading = document.createElement('h1')
+            const m3 = document.createElement('img')
+            const m5 = document.createElement('img')
+            m3.src = 'Assets/m3logo.png'
+            m3.alt = 'm3-logo'
+            m3.setAttribute('id', 'm3logo')
+            m5.src = 'Assets/m5logo.png'
+            m5.alt = 'm5-logo'
+            m5.setAttribute('id', 'm5logo')
+            heading.setAttribute('class', 'head')
+
+            heading.textContent = 'Please select your desired M model to view'
+
+            selectionPage.appendChild(heading)
+            selectionPage.appendChild(m3)
+            selectionPage.appendChild(m5)
+
+        }
+    }
+
+    function backgroundMusic() {
+        const music = document.createElement('audio')
+        music.setAttribute('id', 'music')
+        music.setAttribute('loop', 'true')
+        music.src = 'Assets/backgroundmusic.mp3'
+        fadeInAudio(music, 5);
+        music.play();
+    }
+
+    document.addEventListener('click', function () {
+        playClickSound();
+    });
+
+    function playClickSound() {
+        const audio = new Audio('Assets/click.mp3');
+        audio.play();
+    }
+
+    function fadeInAudio(audio, duration) {
+        const fadeDuration = duration * 1000;
+        const fadeSteps = 50;
+        const initialVolume = 0;
+
+        audio.volume = initialVolume;
+
+        const volumeStep = 1 / fadeSteps;
+        let currentStep = 0;
+
+        const fadeInInterval = setInterval(() => {
+            if (currentStep >= fadeSteps) {
+                clearInterval(fadeInInterval);
+            } else {
+                currentStep++;
+                audio.volume = currentStep * volumeStep;
+            }
+        }, fadeDuration / fadeSteps);
+    }
+
+    function fadeOutAudio(audioElement, durationInSeconds) {
+        const fadeDuration = durationInSeconds * 1000;
+        const fadeSteps = 50;
+
+        const initialVolume = audioElement.volume;
+        const volumeStep = initialVolume / fadeSteps;
+        let currentStep = 0;
+
+        const fadeOutInterval = setInterval(() => {
+            if (currentStep >= fadeSteps) {
+                clearInterval(fadeOutInterval);
+                audioElement.pause();
+            } else {
+                currentStep++;
+                audioElement.volume = initialVolume - currentStep * volumeStep;
+            }
+        }, fadeDuration / fadeSteps);
     }
 }
 
-document.addEventListener('click', function () {
-    playClickSound();
-});
 
-function playClickSound() {
-    const audio = new Audio('Assets/click.mp3'); 
-    audio.play();
-}
-
-function backgroundMusic() {
-    const music = document.createElement('music')
-    music.setAttribute('id', 'music')
-    music.setAttribute('loop', 'true')
-    music.src = 'Assets/backgroundmusic.mp3'
-    music.play();
-}
-
-function fadeInAudio(audio, duration) {
-    const fadeDuration = duration * 1000;
-    const fadeSteps = 50;
-    const initialVolume = 0;
-
-    audio.volume = initialVolume;
-
-    const volumeStep = 1 / fadeSteps;
-    let currentStep = 0;
-
-    const fadeInInterval = setInterval(() => {
-        if (currentStep >= fadeSteps) {
-            clearInterval(fadeInInterval);
-        } else {
-            currentStep++;
-            audio.volume = currentStep * volumeStep;
-        }
-    }, fadeDuration / fadeSteps);
-}
 
 renderInitialView();
