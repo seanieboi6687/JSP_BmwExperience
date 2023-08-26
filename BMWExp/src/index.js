@@ -87,17 +87,26 @@ function renderInitialView(){
             const heading = document.createElement('h1')
             const m3 = document.createElement('img')
             const m5 = document.createElement('img')
+            const light1 = document.createElement('img')
+            const light2 = document.createElement('img')
+            selectionPage.setAttribute('id', 'selection')
             m3.src = 'Assets/m3logo.png'
             m3.alt = 'm3-logo'
             m3.setAttribute('id', 'm3logo')
             m5.src = 'Assets/m5logo.png'
             m5.alt = 'm5-logo'
             m5.setAttribute('id', 'm5logo')
+            light1.src = 'Assets/ceilinglight.png'
+            light1.setAttribute('id', 'light1')
+            light2.src = 'Assets/ceilinglight.png'
+            light2.setAttribute('id', 'light2')
             heading.setAttribute('class', 'head')
 
             heading.textContent = 'Please select your desired M model to view'
 
             selectionPage.appendChild(heading)
+            selectionPage.appendChild(light1)
+            selectionPage.appendChild(light2)
             selectionPage.appendChild(m3)
             selectionPage.appendChild(m5)
 

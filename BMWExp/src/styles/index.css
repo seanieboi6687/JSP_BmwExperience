@@ -111,6 +111,52 @@ p {
     animation: fade-in 3s ease forwards;
 }
 
+#m3logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 16%;
+    top: 50%;
+    width: 31%;
+    height: auto;
+    animation: fade-in 3s ease forwards;
+}
+
+#m5logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    width: 30%;
+    height: auto;
+    animation: fade-in 3s ease forwards;
+}
+
+#light1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 52%;
+    width: 30%;
+    height: auto;
+}
+
+#light2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    left: 17%;
+    width: 30%;
+    height: auto;
+}
+
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 36px;
