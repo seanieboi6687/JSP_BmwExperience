@@ -1,3 +1,6 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0;
@@ -135,7 +138,7 @@ p {
     animation: fade-in 3s ease forwards;
 }
 
-#light1 {
+#light5 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,7 +149,7 @@ p {
     height: auto;
 }
 
-#light2 {
+#light3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,6 +159,93 @@ p {
     width: 30%;
     height: auto;
 }
+
+#circleglow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 21.75%;
+    left: 37.5%;
+    width: 23%;
+    height: auto;
+    animation: fade-in 1s ease forwards;
+}
+
+:root {
+    --bar-width: 60px;
+    --bar-height: 8px;
+    --hamburger-gap: 6px;
+    --foreground: white;
+    --background: white;
+    --hamburger-margin: 20px;
+    --animation-timing: 200ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+
+.hamburger {
+    --x-width: calc(var(--hamburger-height) * 1.41421356237);
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    position: absolute;
+    top: var(--hamburger-margin);
+    left: var(--hamburger-margin);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.hamburger::before, .hamburger::after, .hamburger input {
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 9999px;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing), width var(--animation-timing), 
+                rotate var(--animation-timing), translate var(--animation-timing);
+}
+
+.hamburger input{
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+}
+
+.hamburger:has(input:checked)::before {
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / -2);
+}
+
+.hamburger:has(input:checked)::after {
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--bar-height) / 2);
+}
+
+.hamburger input:checked {
+    opacity: 0;
+    width: 0;
+}
+
+.sidebar {
+    transition: translate var(--animation-timing);
+    translate: -100%;
+    padding: 0.5rem 1rem;
+    padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+    background-color: red;
+    max-width: 10rem;
+    min-height: 100vh;
+}
+
+.hamburger:has(input:checked) + .sidebar {
+    translate: 0;
+}
+
 
 @media screen and (max-width: 768px) {
     h1 {
