@@ -2,41 +2,67 @@ function renderInitialView(){
     const preMain = document.getElementById('pre-main');
     const heading = document.createElement('h1')
     const warning = document.createElement('p')
-    const img1 = document.createElement('img')
-    const img2 = document.createElement('img')
-    const slider = document.createElement('div')
-    const volume = document.createElement('input')
+    const muted = document.createElement('p')
+    const unmuted = document.createElement('p')
+    const background = document.createElement('img')
+    const volumeclick = document.createElement('a')
+    const volume = document.createElement('img')
     const enterButton = document.createElement('button')
+    const aA = document.createElement('img')
    
-    img1.src = 'Assets/prescreendrl.png'
-    img1.alt = 'volume page background'
-    img1.setAttribute('id', 'pre-main-drl')
-    img2.src = 'Assets/volumeicon.png'
-    img2.alt = 'volume icon'
-    img2.setAttribute('id', 'volume-icon')
+    muted.textContent = "Muted"
+    unmuted.textContent = "Unmuted"
+    aA.src = 'Assets/aalogo.svg'
+    background.src = 'Assets/prescreendrl.png'
+    background.alt = 'volume page background'
+    background.setAttribute('id', 'pre-main-drl')
+    volume.src = 'Assets/unmute.png'
+    volume.alt = 'volume icon'
+    aA.setAttribute('class', 'aalogo')
+    volume.setAttribute('id', 'volume-icon')
     preMain.setAttribute('class', 'pre-main')
     heading.setAttribute('class', 'head')
     enterButton.setAttribute('class', 'enter-button')
-    volume.setAttribute('type', 'range')
-    volume.setAttribute('min', '0')
-    volume.setAttribute('max', '100')
-    volume.setAttribute('value', '50')
-    volume.setAttribute('class', 'slider')
+    muted.setAttribute('class', 'mute')
+    unmuted.setAttribute('class', 'unmute')
 
     heading.textContent = 'Welcome to your BMW Ultimate Experience'
     warning.textContent = '⚠ Please take this time to adjust your volume before moving forward ⚠'
     enterButton.textContent = 'ENTER'
     preMain.appendChild(heading)
     preMain.appendChild(enterButton)
-    preMain.appendChild(slider)
-    slider.appendChild(volume)
-    preMain.appendChild(img1)
+    preMain.appendChild(volumeclick)
+    preMain.appendChild(unmuted)
+    volumeclick.appendChild(volume)
+    preMain.appendChild(background)
+    preMain.appendChild(aA)
     heading.appendChild(warning)
-    warning.appendChild(img2)
+
+    let toggle = true;
+    volumeclick.addEventListener("click", () => {
+        toggle = !toggle;
+        if (!toggle) {
+            volume.src = ("Assets/mute.png")
+            muted.textContent = "Muted"
+            unmuted.textContent = ""
+            preMain.appendChild(muted)
+        } else {
+            volume.src = ("Assets/unmute.png")
+            muted.textContent = ""
+            unmuted.textContent = "Unmuted"
+            preMain.appendChild(unmuted)
+        }
+    });
+    
+    const friday1 = new Audio('Assets/intro.mp3')
+    setTimeout(() => {
+        friday1.play();
+    }, 1000)
 
     enterButton.addEventListener('click', function () {
         preMain.innerHTML = '';
         ptsView();
+        friday1.pause();
     });
 }
 
@@ -57,7 +83,7 @@ function ptsView() {
     video.src = "Assets/introvideo.mp4";
     video.alt = "introduction video";
 
-    msg.textContent = 'Please push the button to start your journey'
+    msg.textContent = 'Please click the button to start your journey'
 
     video.playbackRate = 0.7
     video.autoplay = true;
@@ -66,25 +92,36 @@ function ptsView() {
 
     ptsview.appendChild(video);
     ptsview.appendChild(ptsButton);
+    
+    const friday2 = new Audio('Assets/pts.mp3')
+
     video.addEventListener('ended', function () {
+        setTimeout(() => {
+            friday2.play();
+        }, 1000)
         const anchor = document.createElement('a')
         ptsButton.appendChild(anchor)
         anchor.appendChild(ptsButton1);
         setTimeout(ptsButton.appendChild(msg), 3000);
     });
 
+    let clicked = false;
     ptsButton1.addEventListener('click', function () {
-        ptsButton.appendChild(glow)
-        glow.style.zIndex = '-1';
-        const audio = new Audio('Assets/enginesound.mp3')
-        audio.play();
-        setTimeout(() => {
-            fadeOutAudio(audio, 3);
+        if (!clicked){
+            clicked = true;
+            ptsButton.appendChild(glow)
+            glow.style.zIndex = '-1';
+            const audio = new Audio('Assets/enginesound.mp3')
+            audio.play();
+
             setTimeout(() => {
-                ptsview.innerHTML = '';
-                selectionView();
+                fadeOutAudio(audio, 3);
+                setTimeout(() => {
+                    ptsview.innerHTML = '';
+                    selectionView();
+                }, 3000);
             }, 3000);
-        }, 3000);
+        }
     });
 }
 
@@ -116,6 +153,11 @@ function selectionView(){
     selectionPage.appendChild(m3)
     selectionPage.appendChild(m5)
 
+    const friday3 = new Audio('Assets/selection.mp3')
+    setTimeout(() => {
+        friday3.play()
+    }, 1000)
+
     m3.addEventListener('mouseenter', function () {
         m3.style.transition = 'transform 0.3s ease';
         m3.style.transform = 'scale(1.1)';
@@ -137,45 +179,208 @@ function selectionView(){
         m3.style.transform = 'scale(1)';
     });
 
+    let clicked = false;
+    const fridayM3 = new Audio('Assets/m3choice.mp3')
     m3.addEventListener('click', function(){
-        selectionPage.appendChild(light3);
-        playLightSound();
-        setTimeout(() => {
-            m3Selection();
-            selectionPage.innerHTML = ""}, 3000);
+        if (!clicked){
+            clicked = true;
+            selectionPage.appendChild(light3);
+            playLightSound();
+            fridayM3.play();
+            friday3.pause();
+            m5.style.opacity = 0.5;
+            setTimeout(() => {
+                m3Selection();
+                selectionPage.innerHTML = ""}, 3000);
+            }
     })
 
+    const fridayM5 = new Audio('Assets/m5choice.mp3')
     m5.addEventListener('click', function () {
-        selectionPage.appendChild(light5);
-        playLightSound();
-        setTimeout(() => {
-            selectionPage.innerHTML = ""
-        }, 3000)
+        if (!clicked){
+            clicked = true;
+            selectionPage.appendChild(light5);
+            playLightSound();
+            fridayM5.play();
+            friday3.pause();
+            m3.style.opacity = 0.5;
+            setTimeout(() => {
+                m5Selection();
+                selectionPage.innerHTML = ""
+            }, 3000)
+        }
     })
 }
 
 function m3Selection() {
     const m3select = document.getElementById('m3selection')
+    const background = document.createElement('img')
     const menu = document.createElement('label')
     const check = document.createElement('input')
     const aside = document.createElement('aside')
     const nav = document.createElement('nav')
-    const home = document.createElement('div')
-    const m321 = document.createElement('img')
+    const home = document.createElement('img')
+    const linkediv = document.createElement('div')
+    const linkedin = document.createElement('img')
+    const gitdiv = document.createElement('div')
+    const github = document.createElement('img')
+    const mperf = document.createElement('img')
 
-    m321.src = 'Assets/2021M3.png'
-    home.textContent = 'Home'
+    background.src = 'Assets/databackground.jpeg'
+    mperf.src = 'Assets/mperf.png'
+    linkedin.src = 'Assets/linkedin.png'
+    github.src = 'Assets/github.png'
+    home.src = 'Assets/home.png'
 
+    home.setAttribute('class', 'home')
+    background.setAttribute('class', 'background')
     aside.setAttribute('class', 'sidebar')
     menu.setAttribute('class', 'hamburger')
     check.setAttribute('type', 'checkbox')
+    mperf.setAttribute('class', 'mperf')
+    linkedin.setAttribute('class', 'linked')
+    github.setAttribute('class', 'git')
 
     m3select.appendChild(menu)
-    menu.appendChild(check)
     m3select.appendChild(aside)
-    // m3select.appendChild(m321)
+    menu.appendChild(check)
     aside.appendChild(nav)
     nav.appendChild(home)
+    nav.appendChild(linkediv)
+    nav.appendChild(gitdiv)
+    nav.appendChild(mperf)
+    linkediv.appendChild(linkedin)
+    gitdiv.appendChild(github)
+
+
+    home.addEventListener('mouseenter', function () {
+        home.style.transition = 'transform 0.3s ease';
+        home.style.transform = 'scale(1.2)';
+    });
+
+    home.addEventListener('mouseleave', function () {
+        home.style.transition = 'transform 0.3s ease';
+        home.style.transform = 'scale(1)';
+    });
+
+    home.addEventListener('click', function(){
+        m3select.innerHTML = ""
+        selectionView();
+    })
+
+    github.addEventListener('mouseenter', function () {
+        github.style.transition = 'transform 0.3s ease';
+        github.style.transform = 'scale(1.2)';
+    });
+
+    github.addEventListener('mouseleave', function () {
+        github.style.transition = 'transform 0.3s ease';
+        github.style.transform = 'scale(1)';
+    });
+
+    github.addEventListener('click', function(){
+        window.open('https://github.com/seanieboi6687', '_blank')
+    })
+
+    linkedin.addEventListener('mouseenter', function () {
+        linkedin.style.transition = 'transform 0.3s ease';
+        linkedin.style.transform = 'scale(1.2)';
+    });
+
+    linkedin.addEventListener('mouseleave', function () {
+        linkedin.style.transition = 'transform 0.3s ease';
+        linkedin.style.transform = 'scale(1)';
+    });
+
+    linkedin.addEventListener('click', function () {
+        window.open('https://www.linkedin.com/in/sean-jeun-33445615b/', '_blank')
+    })
+}
+
+function m5Selection(){
+    const m5select = document.getElementById('m5selection')
+    const menu = document.createElement('label')
+    const check = document.createElement('input')
+    const aside = document.createElement('aside')
+    const nav = document.createElement('nav')
+    const home = document.createElement('img')
+    const linkediv = document.createElement('div')
+    const linkedin = document.createElement('img')
+    const gitdiv = document.createElement('div')
+    const github = document.createElement('img')
+    const mperf = document.createElement('img')
+
+    mperf.src = 'Assets/mperf.png'
+    linkedin.src = 'Assets/linkedin.png'
+    github.src = 'Assets/github.png'
+    home.src = 'Assets/home.png'
+
+    home.setAttribute('class', 'home')
+    aside.setAttribute('class', 'sidebar')
+    menu.setAttribute('class', 'hamburger')
+    check.setAttribute('type', 'checkbox')
+    mperf.setAttribute('class', 'mperf')
+    linkedin.setAttribute('class', 'linked')
+    github.setAttribute('class', 'git')
+
+    m5select.appendChild(menu)
+    menu.appendChild(check)
+    m5select.appendChild(aside)
+    aside.appendChild(nav)
+    nav.appendChild(home)
+    nav.appendChild(linkediv)
+    nav.appendChild(gitdiv)
+    nav.appendChild(mperf)
+    linkediv.appendChild(linkedin)
+    gitdiv.appendChild(github)
+
+    home.addEventListener('click', function () {
+        m5select.innerHTML = ""
+        selectionView();
+    })
+
+    home.addEventListener('mouseenter', function () {
+        home.style.transition = 'transform 0.3s ease';
+        home.style.transform = 'scale(1.2)';
+    });
+
+    home.addEventListener('mouseleave', function () {
+        home.style.transition = 'transform 0.3s ease';
+        home.style.transform = 'scale(1)';
+    });
+
+    home.addEventListener('click', function () {
+        m3select.innerHTML = ""
+        selectionView();
+    })
+
+    github.addEventListener('mouseenter', function () {
+        github.style.transition = 'transform 0.3s ease';
+        github.style.transform = 'scale(1.2)';
+    });
+
+    github.addEventListener('mouseleave', function () {
+        github.style.transition = 'transform 0.3s ease';
+        github.style.transform = 'scale(1)';
+    });
+
+    github.addEventListener('click', function () {
+        window.open('https://github.com/seanieboi6687', '_blank')
+    })
+
+    linkedin.addEventListener('mouseenter', function () {
+        linkedin.style.transition = 'transform 0.3s ease';
+        linkedin.style.transform = 'scale(1.2)';
+    });
+
+    linkedin.addEventListener('mouseleave', function () {
+        linkedin.style.transition = 'transform 0.3s ease';
+        linkedin.style.transform = 'scale(1)';
+    });
+
+    linkedin.addEventListener('click', function () {
+        window.open('https://www.linkedin.com/in/sean-jeun-33445615b/', '_blank')
+    })
 }
 
 function backgroundMusic() {
@@ -240,7 +445,6 @@ function fadeOutAudio(audioElement, durationInSeconds) {
     }, fadeDuration / fadeSteps);
 }
 
-
-
-
 renderInitialView();
+
+
