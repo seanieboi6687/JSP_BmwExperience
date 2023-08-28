@@ -381,7 +381,7 @@ p {
 .M52021 {
     display: flex;
     position: absolute;
-    top: 55%;
+    top: 60%;
     left: 60%;
     width: 50%;
     height: auto;
@@ -393,8 +393,8 @@ p {
 .M52011 {
     display: flex;
     position: absolute;
-    top: 52%;
-    left: 140%;
+    top: 60%;
+    left: 180%;
     width: 50%;
     height: auto;
     z-index: -1;
@@ -405,8 +405,8 @@ p {
 .M52006 {
     display: flex;
     position: absolute;
-    top: 53%;
-    left: 245%;
+    top: 55%;
+    left: 285%;
     width: 55%;
     height: auto;
     z-index: -1;
@@ -417,8 +417,8 @@ p {
 .M51998 {
     display: flex;
     position: absolute;
-    top: 52%;
-    left: 350%;
+    top: 63%;
+    left: 390%;
     width: 50%;
     height: auto;
     z-index: -1;
@@ -429,8 +429,8 @@ p {
 .M51988 {
     display: flex;
     position: absolute;
-    top: 58%;
-    left: 455%;
+    top: 69%;
+    left: 500%;
     width: 45%;
     height: auto;
     z-index: -1;
@@ -618,6 +618,185 @@ p {
     top: 57%;
 }
 
+.infobox-51 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 20%;
+    width: 30%;
+    top: 21%;
+}
+
+.infobox-52 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 20%;
+    width: 30%;
+    top: 3%;
+}
+
+.infobox-53 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 20%;
+    width: 30%;
+    top: 39%;
+}
+
+.infobox-54 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 20%;
+    width: 30%;
+    top: 57%;
+}
+
+.infobox-55 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 140%;
+    width: 30%;
+    top: 21%;
+}
+
+.infobox-56 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 140%;
+    width: 30%;
+    top: 3%;
+}
+
+.infobox-57 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 140%;
+    width: 30%;
+    top: 39%;
+}
+
+.infobox-58 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 140%;
+    width: 30%;
+    top: 57%;
+}
+
+.infobox-59 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 250%;
+    width: 30%;
+    top: 21%;
+}
+
+.infobox-510 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 250%;
+    width: 30%;
+    top: 3%;
+}
+
+.infobox-511 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 250%;
+    width: 30%;
+    top: 39%;
+}
+
+.infobox-512 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 250%;
+    width: 30%;
+    top: 57%;
+}
+
+.infobox-513 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 350%;
+    width: 30%;
+    top: 21%;
+}
+
+.infobox-514 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 350%;
+    width: 30%;
+    top: 3%;
+}
+
+.infobox-515 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 350%;
+    width: 30%;
+    top: 39%;
+}
+
+.infobox-516 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 350%;
+    width: 30%;
+    top: 57%;
+}
+
+.infobox-517 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 455%;
+    width: 30%;
+    top: 21%;
+}
+
+.infobox-518 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 455%;
+    width: 30%;
+    top: 3%;
+}
+
+.infobox-519 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 455%;
+    width: 30%;
+    top: 39%;
+}
+
+.infobox-520 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 455%;
+    width: 30%;
+    top: 57%;
+}
 
 
 html {

@@ -189,8 +189,15 @@ function selectionView(){
             fridayM3.play();
             friday3.pause();
             setTimeout(() => {
-                console.log(selectionPage)
-                m3Selection();
+                const m3select = document.getElementById('m3selection')
+                if (m3select.innerHTML === ""){
+                    const content = document.createElement('div')
+                    content.setAttribute('id', 'content3')
+                    m3select.appendChild(content)
+                    m3Selection();
+                } else {
+                    m3Selection();
+                }
                 selectionPage.innerHTML = ""}, 3000);
             }
     })
@@ -204,9 +211,16 @@ function selectionView(){
             fridayM5.play();
             friday3.pause();
             setTimeout(() => {
-                m5Selection();
-                selectionPage.innerHTML = ""
-            }, 3000)
+                const m5select = document.getElementById('m5selection')
+                if (m5select.innerHTML === "") {
+                    const content = document.createElement('div')
+                    content.setAttribute('id', 'content5')
+                    m5select.appendChild(content)
+                    m5Selection();
+                } else {
+                    m5Selection();
+                }
+                selectionPage.innerHTML = ""}, 3000)
         }
     })
 }
@@ -429,7 +443,7 @@ function m5Selection(){
     for (let i = 1; i <= infoboxCount; i++) {
         const infobox = document.createElement('img');
         infobox.src = 'Assets/infobox1.png';
-        infobox.setAttribute('class', 'infobox-' + i);
+        infobox.setAttribute('class', 'infobox-5' + i);
         content.appendChild(infobox);
     }
 
