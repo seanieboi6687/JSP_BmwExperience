@@ -36,7 +36,7 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 45%;
+    top: 44%;
     left: 50%;
     transform: translate(-50%, -50%);
     animation: fade-in 3s ease forwards;
@@ -50,7 +50,8 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 46%;
+    top: 47%;
+    left: 47%;
     animation: fade-in 3s ease forwards;
 }
 
@@ -67,16 +68,16 @@ body {
 
 .enter-button {
     display: flex;
-    align-items: center;
-    position: absolute;
-    justify-content: center;
-    top: 60%;
-    width: 120px;
-    font-size: 18px;
-    background-color: white;
-    border-color: white;
-    animation: fade-in 3s ease forwards;
-    cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: fade-in 3s ease forwards;
+        width: 10%;
+        height: 3%;
+        cursor: pointer;
 }
 
 h1 {

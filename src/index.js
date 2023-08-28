@@ -299,7 +299,7 @@ function m3Selection() {
     infobox19.src = 'Assets/infobox1.png'
     infobox20.src = 'Assets/infobox1.png'
 
-    // content.setAttribute('class', 'contents')
+    content.setAttribute('class', 'contents')
     home.setAttribute('class', 'home')
     m3select.setAttribute('class', 'm3selected')
     m32021.setAttribute('class', 'M32021')
