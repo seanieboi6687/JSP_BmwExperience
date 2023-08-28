@@ -214,7 +214,7 @@ function selectionView(){
 
 function m3Selection() {
     const m3select = document.getElementById('m3selection')
-    const background = document.createElement('img')
+    const content = document.getElementById('content')
     const menu = document.createElement('label')
     const check = document.createElement('input')
     const aside = document.createElement('aside')
@@ -225,15 +225,17 @@ function m3Selection() {
     const gitdiv = document.createElement('div')
     const github = document.createElement('img')
     const mperf = document.createElement('img')
+    const m32021 = document.createElement('img')
 
-    background.src = 'Assets/databackground.jpeg'
     mperf.src = 'Assets/mperf.png'
     linkedin.src = 'Assets/linkedin.png'
     github.src = 'Assets/github.png'
     home.src = 'Assets/home.png'
+    m32021.src = 'Assets/2021M3.png'
 
     home.setAttribute('class', 'home')
-    background.setAttribute('class', 'background')
+    m3select.setAttribute('class', 'm3selected')
+    m32021.setAttribute('class', "M32021")
     aside.setAttribute('class', 'sidebar')
     menu.setAttribute('class', 'hamburger')
     check.setAttribute('type', 'checkbox')
@@ -242,6 +244,7 @@ function m3Selection() {
     github.setAttribute('class', 'git')
 
     m3select.appendChild(menu)
+    content.appendChild(m32021)
     m3select.appendChild(aside)
     menu.appendChild(check)
     aside.appendChild(nav)
