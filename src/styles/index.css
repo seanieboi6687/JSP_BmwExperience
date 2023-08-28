@@ -6,7 +6,8 @@ body {
     padding: 0;
     background-color: black;
     color: white;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: hidden;
 }
 
 #pre-main-drl {
@@ -189,9 +190,6 @@ p {
     animation: fade-in 1s ease forwards;
 }
 
-.m3selected {
-    z-index: -2;
-}
 :root {
     --bar-width: 60px;
     --bar-height: 8px;
@@ -299,22 +297,267 @@ p {
 }
 
 .mperf {
-    padding-top: 4rem;
+    padding-top: 3.5rem;
     padding-left: 6.5rem;
     left: 0%;
-    opacity: 0.7;
+    opacity: 0.6;
     z-index: 3;
 }
 
+.m3selected {
+    z-index: -2;
+}
+
+.contents {
+    display: flex;
+}
+
+
 .M32021 {
+    display: flex;
     position: absolute;
-    right: 0%;
-    top: 67%;
+    top: 50%;
+    left: 40%;
     width: 60%;
     height: auto;
     z-index: -1;
+    animation: fade-in 3s ease forwards;
+    scroll-snap-align: end;
 }
 
+.M32015 {
+    display: flex;
+    position: absolute;
+    top: 52%;
+    left: 140%;
+    width: 60%;
+    height: auto;
+    z-index: -1;
+    animation: fade-in 3s ease forwards;
+    scroll-snap-align: end;
+}
+
+.M32008 {
+    display: flex;
+    position: absolute;
+    top: 53%;
+    left: 245%;
+    width: 55%;
+    height: auto;
+    z-index: -1;
+    animation: fade-in 3s ease forwards;
+    scroll-snap-align: end;
+}
+
+.M31995 {
+    display: flex;
+    position: absolute;
+    top: 52%;
+    left: 350%;
+    width: 50%;
+    height: auto;
+    z-index: -1;
+    animation: fade-in 3s ease forwards;
+    scroll-snap-align: end;
+}
+
+.M31986 {
+    display: flex;
+    position: absolute;
+    top: 58%;
+    left: 455%;
+    width: 45%;
+    height: auto;
+    z-index: -1;
+    animation: fade-in 3s ease forwards;
+    scroll-snap-align: end;
+}
+
+.infobox-1 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 10%;
+    width: 30%;
+    top: 21%;
+}
+
+.infobox-2 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 10%;
+    width: 30%;
+    top: 3%;
+}
+
+.infobox-3 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 10%;
+    width: 30%;
+    top: 39%;
+}
+
+.infobox-4 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 10%;
+    width: 30%;
+    top: 57%;
+}
+
+.infobox-5 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 110%;
+    width: 30%;
+    top: 21%;
+}
+
+.infobox-6 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 110%;
+    width: 30%;
+    top: 3%;
+}
+
+.infobox-7 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 110%;
+    width: 30%;
+    top: 39%;
+}
+
+.infobox-8 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 110%;
+    width: 30%;
+    top: 57%;
+}
+
+.infobox-9 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 210%;
+    width: 30%;
+    top: 21%;
+}
+
+.infobox-10 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 210%;
+    width: 30%;
+    top: 3%;
+}
+
+.infobox-11 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 210%;
+    width: 30%;
+    top: 39%;
+}
+
+.infobox-12 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 210%;
+    width: 30%;
+    top: 57%;
+}
+
+.infobox-13 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 310%;
+    width: 30%;
+    top: 21%;
+}
+
+.infobox-14 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 310%;
+    width: 30%;
+    top: 3%;
+}
+
+.infobox-15 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 310%;
+    width: 30%;
+    top: 39%;
+}
+
+.infobox-16 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 310%;
+    width: 30%;
+    top: 57%;
+}
+
+.infobox-17 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 410%;
+    width: 30%;
+    top: 21%;
+}
+
+.infobox-18 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 410%;
+    width: 30%;
+    top: 3%;
+}
+
+.infobox-19 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 410%;
+    width: 30%;
+    top: 39%;
+}
+
+.infobox-20 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 410%;
+    width: 30%;
+    top: 57%;
+}
+
+
+
+html {
+    scroll-snap-type: x mandatory;
+}
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 36px;

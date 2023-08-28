@@ -188,7 +188,6 @@ function selectionView(){
             playLightSound();
             fridayM3.play();
             friday3.pause();
-            m5.style.opacity = 0.5;
             setTimeout(() => {
                 m3Selection();
                 selectionPage.innerHTML = ""}, 3000);
@@ -203,7 +202,6 @@ function selectionView(){
             playLightSound();
             fridayM5.play();
             friday3.pause();
-            m3.style.opacity = 0.5;
             setTimeout(() => {
                 m5Selection();
                 selectionPage.innerHTML = ""
@@ -226,25 +224,143 @@ function m3Selection() {
     const github = document.createElement('img')
     const mperf = document.createElement('img')
     const m32021 = document.createElement('img')
+    const m32015 = document.createElement('img')
+    const m32008 = document.createElement('img')
+    const m31995 = document.createElement('img')
+    const m31986 = document.createElement('img')
+    const infobox1 = document.createElement('img')
+    const info1 = document.createElement('p')
+    const infobox2 = document.createElement('img')
+    const info2 = document.createElement('p')
+    const infobox3 = document.createElement('img')
+    const info3 = document.createElement('p')
+    const infobox4 = document.createElement('img')
+    const info4 = document.createElement('p')
+    const infobox5 = document.createElement('img')
+    const info5 = document.createElement('p')
+    const infobox6 = document.createElement('img')
+    const info6 = document.createElement('p')
+    const infobox7 = document.createElement('img')
+    const info7 = document.createElement('p')
+    const infobox8 = document.createElement('img')
+    const info8 = document.createElement('p')
+    const infobox9 = document.createElement('img')
+    const info9 = document.createElement('p')
+    const infobox10 = document.createElement('img')
+    const info10 = document.createElement('p')
+    const infobox11 = document.createElement('img')
+    const info11 = document.createElement('p')
+    const infobox12 = document.createElement('img')
+    const info12 = document.createElement('p')
+    const infobox13 = document.createElement('img')
+    const info13 = document.createElement('p')
+    const infobox14 = document.createElement('img')
+    const info14 = document.createElement('p')
+    const infobox15 = document.createElement('img')
+    const info15 = document.createElement('p')
+    const infobox16 = document.createElement('img')
+    const info16 = document.createElement('p')
+    const infobox17 = document.createElement('img')
+    const info17 = document.createElement('p')
+    const infobox18 = document.createElement('img')
+    const info18 = document.createElement('p')
+    const infobox19 = document.createElement('img')
+    const info19 = document.createElement('p')
+    const infobox20 = document.createElement('img')
+    const info20 = document.createElement('p')
 
     mperf.src = 'Assets/mperf.png'
     linkedin.src = 'Assets/linkedin.png'
     github.src = 'Assets/github.png'
     home.src = 'Assets/home.png'
     m32021.src = 'Assets/2021M3.png'
+    m32015.src = 'Assets/2015M3.png'
+    m32008.src = 'Assets/2008M3.png'
+    m31995.src = 'Assets/1995M3.png'
+    m31986.src = 'Assets/1986M3.png'
+    infobox1.src = 'Assets/infobox1.png'
+    infobox2.src = 'Assets/infobox1.png'
+    infobox3.src = 'Assets/infobox1.png'
+    infobox4.src = 'Assets/infobox1.png'
+    infobox5.src = 'Assets/infobox1.png'
+    infobox6.src = 'Assets/infobox1.png'
+    infobox7.src = 'Assets/infobox1.png'
+    infobox8.src = 'Assets/infobox1.png'
+    infobox9.src = 'Assets/infobox1.png'
+    infobox10.src = 'Assets/infobox1.png'
+    infobox11.src = 'Assets/infobox1.png'
+    infobox12.src = 'Assets/infobox1.png'
+    infobox13.src = 'Assets/infobox1.png'
+    infobox14.src = 'Assets/infobox1.png'
+    infobox15.src = 'Assets/infobox1.png'
+    infobox16.src = 'Assets/infobox1.png'
+    infobox17.src = 'Assets/infobox1.png'
+    infobox18.src = 'Assets/infobox1.png'
+    infobox19.src = 'Assets/infobox1.png'
+    infobox20.src = 'Assets/infobox1.png'
 
+    // content.setAttribute('class', 'contents')
     home.setAttribute('class', 'home')
     m3select.setAttribute('class', 'm3selected')
-    m32021.setAttribute('class', "M32021")
+    m32021.setAttribute('class', 'M32021')
+    m32015.setAttribute('class', 'M32015')
+    m32008.setAttribute('class', 'M32008')
+    m31995.setAttribute('class', 'M31995')
+    m31986.setAttribute('class', 'M31986')
     aside.setAttribute('class', 'sidebar')
     menu.setAttribute('class', 'hamburger')
     check.setAttribute('type', 'checkbox')
     mperf.setAttribute('class', 'mperf')
     linkedin.setAttribute('class', 'linked')
     github.setAttribute('class', 'git')
+    infobox1.setAttribute('class', 'infobox-1')
+    infobox2.setAttribute('class', 'infobox-2')
+    infobox3.setAttribute('class', 'infobox-3')
+    infobox4.setAttribute('class', 'infobox-4')
+    infobox5.setAttribute('class', 'infobox-5')
+    infobox6.setAttribute('class', 'infobox-6')
+    infobox7.setAttribute('class', 'infobox-7')
+    infobox8.setAttribute('class', 'infobox-8')
+    infobox9.setAttribute('class', 'infobox-9')
+    infobox10.setAttribute('class', 'infobox-10')
+    infobox11.setAttribute('class', 'infobox-11')
+    infobox12.setAttribute('class', 'infobox-12')
+    infobox13.setAttribute('class', 'infobox-13')
+    infobox14.setAttribute('class', 'infobox-14')
+    infobox15.setAttribute('class', 'infobox-15')
+    infobox16.setAttribute('class', 'infobox-16')
+    infobox17.setAttribute('class', 'infobox-17')
+    infobox18.setAttribute('class', 'infobox-18')
+    infobox19.setAttribute('class', 'infobox-19')
+    infobox20.setAttribute('class', 'infobox-20')
+
 
     m3select.appendChild(menu)
     content.appendChild(m32021)
+    content.appendChild(m32015)
+    content.appendChild(m32008)
+    content.appendChild(m31995)
+    content.appendChild(m31986)
+    content.appendChild(infobox1)
+    content.appendChild(infobox2)
+    content.appendChild(infobox3)
+    content.appendChild(infobox4)
+    content.appendChild(infobox5)
+    content.appendChild(infobox6)
+    content.appendChild(infobox7)
+    content.appendChild(infobox8)
+    content.appendChild(infobox9)
+    content.appendChild(infobox10)
+    content.appendChild(infobox11)
+    content.appendChild(infobox12)
+    content.appendChild(infobox13)
+    content.appendChild(infobox14)
+    content.appendChild(infobox15)
+    content.appendChild(infobox16)
+    content.appendChild(infobox17)
+    content.appendChild(infobox18)
+    content.appendChild(infobox19)
+    content.appendChild(infobox20)
     m3select.appendChild(aside)
     menu.appendChild(check)
     aside.appendChild(nav)
@@ -298,6 +414,8 @@ function m3Selection() {
     linkedin.addEventListener('click', function () {
         window.open('https://www.linkedin.com/in/sean-jeun-33445615b/', '_blank')
     })
+    
+
 }
 
 function m5Selection(){
