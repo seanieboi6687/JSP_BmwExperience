@@ -309,8 +309,12 @@ p {
     z-index: -2;
 }
 
+.m5selected {
+    z-index: -2;
+}
+
 .contents {
-    display: flex;
+    z-index: -10;
 }
 
 
@@ -363,6 +367,66 @@ p {
 }
 
 .M31986 {
+    display: flex;
+    position: absolute;
+    top: 58%;
+    left: 455%;
+    width: 45%;
+    height: auto;
+    z-index: -1;
+    animation: fade-in 3s ease forwards;
+    scroll-snap-align: end;
+}
+
+.M52021 {
+    display: flex;
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    width: 50%;
+    height: auto;
+    z-index: -1;
+    animation: fade-in 3s ease forwards;
+    scroll-snap-align: end;
+}
+
+.M52011 {
+    display: flex;
+    position: absolute;
+    top: 52%;
+    left: 140%;
+    width: 50%;
+    height: auto;
+    z-index: -1;
+    animation: fade-in 3s ease forwards;
+    scroll-snap-align: end;
+}
+
+.M52006 {
+    display: flex;
+    position: absolute;
+    top: 53%;
+    left: 245%;
+    width: 55%;
+    height: auto;
+    z-index: -1;
+    animation: fade-in 3s ease forwards;
+    scroll-snap-align: end;
+}
+
+.M51998 {
+    display: flex;
+    position: absolute;
+    top: 52%;
+    left: 350%;
+    width: 50%;
+    height: auto;
+    z-index: -1;
+    animation: fade-in 3s ease forwards;
+    scroll-snap-align: end;
+}
+
+.M51988 {
     display: flex;
     position: absolute;
     top: 58%;

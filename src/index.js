@@ -189,6 +189,7 @@ function selectionView(){
             fridayM3.play();
             friday3.pause();
             setTimeout(() => {
+                console.log(selectionPage)
                 m3Selection();
                 selectionPage.innerHTML = ""}, 3000);
             }
@@ -212,7 +213,7 @@ function selectionView(){
 
 function m3Selection() {
     const m3select = document.getElementById('m3selection')
-    const content = document.getElementById('content')
+    const content = document.getElementById('content3')
     const menu = document.createElement('label')
     const check = document.createElement('input')
     const aside = document.createElement('aside')
@@ -229,45 +230,45 @@ function m3Selection() {
     const m31995 = document.createElement('img')
     const m31986 = document.createElement('img')
     const infobox1 = document.createElement('img')
-        const info1 = document.createElement('p')
-        const infobox2 = document.createElement('img')
-        const info2 = document.createElement('p')
-        const infobox3 = document.createElement('img')
-        const info3 = document.createElement('p')
-        const infobox4 = document.createElement('img')
-        const info4 = document.createElement('p')
-        const infobox5 = document.createElement('img')
-        const info5 = document.createElement('p')
-        const infobox6 = document.createElement('img')
-        const info6 = document.createElement('p')
-        const infobox7 = document.createElement('img')
-        const info7 = document.createElement('p')
-        const infobox8 = document.createElement('img')
-        const info8 = document.createElement('p')
-        const infobox9 = document.createElement('img')
-        const info9 = document.createElement('p')
-        const infobox10 = document.createElement('img')
-        const info10 = document.createElement('p')
-        const infobox11 = document.createElement('img')
-        const info11 = document.createElement('p')
-        const infobox12 = document.createElement('img')
-        const info12 = document.createElement('p')
-        const infobox13 = document.createElement('img')
-        const info13 = document.createElement('p')
-        const infobox14 = document.createElement('img')
-        const info14 = document.createElement('p')
-        const infobox15 = document.createElement('img')
-        const info15 = document.createElement('p')
-        const infobox16 = document.createElement('img')
-        const info16 = document.createElement('p')
-        const infobox17 = document.createElement('img')
-        const info17 = document.createElement('p')
-        const infobox18 = document.createElement('img')
-        const info18 = document.createElement('p')
-        const infobox19 = document.createElement('img')
-        const info19 = document.createElement('p')
-        const infobox20 = document.createElement('img')
-        const info20 = document.createElement('p')
+    const info1 = document.createElement('p')
+    const infobox2 = document.createElement('img')
+    const info2 = document.createElement('p')
+    const infobox3 = document.createElement('img')
+    const info3 = document.createElement('p')
+    const infobox4 = document.createElement('img')
+    const info4 = document.createElement('p')
+    const infobox5 = document.createElement('img')
+    const info5 = document.createElement('p')
+    const infobox6 = document.createElement('img')
+    const info6 = document.createElement('p')
+    const infobox7 = document.createElement('img')
+    const info7 = document.createElement('p')
+    const infobox8 = document.createElement('img')
+    const info8 = document.createElement('p')
+    const infobox9 = document.createElement('img')
+    const info9 = document.createElement('p')
+    const infobox10 = document.createElement('img')
+    const info10 = document.createElement('p')
+    const infobox11 = document.createElement('img')
+    const info11 = document.createElement('p')
+    const infobox12 = document.createElement('img')
+    const info12 = document.createElement('p')
+    const infobox13 = document.createElement('img')
+    const info13 = document.createElement('p')
+    const infobox14 = document.createElement('img')
+    const info14 = document.createElement('p')
+    const infobox15 = document.createElement('img')
+    const info15 = document.createElement('p')
+    const infobox16 = document.createElement('img')
+    const info16 = document.createElement('p')
+    const infobox17 = document.createElement('img')
+    const info17 = document.createElement('p')
+    const infobox18 = document.createElement('img')
+    const info18 = document.createElement('p')
+    const infobox19 = document.createElement('img')
+    const info19 = document.createElement('p')
+    const infobox20 = document.createElement('img')
+    const info20 = document.createElement('p')
 
     const infoboxCount = 20;
 
@@ -362,12 +363,11 @@ function m3Selection() {
     linkedin.addEventListener('click', function () {
         window.open('https://www.linkedin.com/in/sean-jeun-33445615b/', '_blank')
     })
-    
-
 }
 
 function m5Selection(){
     const m5select = document.getElementById('m5selection')
+    const content = document.getElementById('content5')
     const menu = document.createElement('label')
     const check = document.createElement('input')
     const aside = document.createElement('aside')
@@ -378,12 +378,77 @@ function m5Selection(){
     const gitdiv = document.createElement('div')
     const github = document.createElement('img')
     const mperf = document.createElement('img')
+    const m52021 = document.createElement('img')
+    const m52011 = document.createElement('img')
+    const m52006 = document.createElement('img')
+    const m51998 = document.createElement('img')
+    const m51988 = document.createElement('img')
+    const infobox1 = document.createElement('img')
+    const info1 = document.createElement('p')
+    const infobox2 = document.createElement('img')
+    const info2 = document.createElement('p')
+    const infobox3 = document.createElement('img')
+    const info3 = document.createElement('p')
+    const infobox4 = document.createElement('img')
+    const info4 = document.createElement('p')
+    const infobox5 = document.createElement('img')
+    const info5 = document.createElement('p')
+    const infobox6 = document.createElement('img')
+    const info6 = document.createElement('p')
+    const infobox7 = document.createElement('img')
+    const info7 = document.createElement('p')
+    const infobox8 = document.createElement('img')
+    const info8 = document.createElement('p')
+    const infobox9 = document.createElement('img')
+    const info9 = document.createElement('p')
+    const infobox10 = document.createElement('img')
+    const info10 = document.createElement('p')
+    const infobox11 = document.createElement('img')
+    const info11 = document.createElement('p')
+    const infobox12 = document.createElement('img')
+    const info12 = document.createElement('p')
+    const infobox13 = document.createElement('img')
+    const info13 = document.createElement('p')
+    const infobox14 = document.createElement('img')
+    const info14 = document.createElement('p')
+    const infobox15 = document.createElement('img')
+    const info15 = document.createElement('p')
+    const infobox16 = document.createElement('img')
+    const info16 = document.createElement('p')
+    const infobox17 = document.createElement('img')
+    const info17 = document.createElement('p')
+    const infobox18 = document.createElement('img')
+    const info18 = document.createElement('p')
+    const infobox19 = document.createElement('img')
+    const info19 = document.createElement('p')
+    const infobox20 = document.createElement('img')
+    const info20 = document.createElement('p')
+
+    const infoboxCount = 20;
+
+    for (let i = 1; i <= infoboxCount; i++) {
+        const infobox = document.createElement('img');
+        infobox.src = 'Assets/infobox1.png';
+        infobox.setAttribute('class', 'infobox-' + i);
+        content.appendChild(infobox);
+    }
 
     mperf.src = 'Assets/mperf.png'
     linkedin.src = 'Assets/linkedin.png'
     github.src = 'Assets/github.png'
     home.src = 'Assets/home.png'
+    m52021.src = 'Assets/2021M5.png'
+    m52011.src = 'Assets/2011M5.png'
+    m52006.src = 'Assets/2006M5.png'
+    m51998.src = 'Assets/1998M5.png'
+    m51988.src = 'Assets/1988M5.png'
 
+    content.setAttribute('class', 'contents')
+    m52021.setAttribute('class', 'M52021')
+    m52011.setAttribute('class', 'M52011')
+    m52006.setAttribute('class', 'M52006')
+    m51998.setAttribute('class', 'M51998')
+    m51988.setAttribute('class', 'M51988')
     home.setAttribute('class', 'home')
     aside.setAttribute('class', 'sidebar')
     menu.setAttribute('class', 'hamburger')
@@ -392,6 +457,11 @@ function m5Selection(){
     linkedin.setAttribute('class', 'linked')
     github.setAttribute('class', 'git')
 
+    content.appendChild(m52021)
+    content.appendChild(m52011)
+    content.appendChild(m52006)
+    content.appendChild(m51998)
+    content.appendChild(m51988)
     m5select.appendChild(menu)
     menu.appendChild(check)
     m5select.appendChild(aside)
