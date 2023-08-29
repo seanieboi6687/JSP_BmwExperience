@@ -1,5 +1,5 @@
 function renderInitialView(){
-    const preMain = document.getElementById('pre-main');
+    const preMain = document.getElementById('premain')
     const heading = document.createElement('h1')
     const warning = document.createElement('p')
     const muted = document.createElement('p')
@@ -21,6 +21,7 @@ function renderInitialView(){
     aA.setAttribute('class', 'aalogo')
     volume.setAttribute('id', 'volume-icon')
     preMain.setAttribute('class', 'pre-main')
+    
     heading.setAttribute('class', 'head')
     enterButton.setAttribute('class', 'enter-button')
     muted.setAttribute('class', 'mute')
@@ -29,14 +30,16 @@ function renderInitialView(){
     heading.textContent = 'Welcome to your BMW Ultimate Experience'
     warning.textContent = '⚠ Please take this time to adjust your volume before moving forward ⚠'
     enterButton.textContent = 'ENTER'
-    preMain.appendChild(heading)
-    preMain.appendChild(enterButton)
-    preMain.appendChild(volumeclick)
-    preMain.appendChild(unmuted)
-    volumeclick.appendChild(volume)
-    preMain.appendChild(background)
-    preMain.appendChild(aA)
-    heading.appendChild(warning)
+
+    preMain.appendChild(heading);
+    preMain.appendChild(warning); // Move this line here, outside of the heading element
+    preMain.appendChild(enterButton);
+    preMain.appendChild(volumeclick);
+    preMain.appendChild(unmuted);
+    volumeclick.appendChild(volume);
+    preMain.appendChild(background);
+    preMain.appendChild(aA);
+    
 
     let toggle = true;
     volumeclick.addEventListener("click", () => {
@@ -238,60 +241,52 @@ function m3Selection() {
     const gitdiv = document.createElement('div')
     const github = document.createElement('img')
     const mperf = document.createElement('img')
+    const cars = document.createElement('div')
     const m32021 = document.createElement('img')
     const m32015 = document.createElement('img')
     const m32008 = document.createElement('img')
     const m31995 = document.createElement('img')
     const m31986 = document.createElement('img')
     const infobox1 = document.createElement('img')
-    const info1 = document.createElement('p')
+    const infotext1 = document.createElement('p')
     const infobox2 = document.createElement('img')
-    const info2 = document.createElement('p')
+    const infotext2 = document.createElement('p')
     const infobox3 = document.createElement('img')
-    const info3 = document.createElement('p')
+    const infotext3 = document.createElement('p')
     const infobox4 = document.createElement('img')
-    const info4 = document.createElement('p')
+    const infotext4 = document.createElement('p')
     const infobox5 = document.createElement('img')
-    const info5 = document.createElement('p')
+    const infotext5 = document.createElement('p')
     const infobox6 = document.createElement('img')
-    const info6 = document.createElement('p')
+    const infotext6 = document.createElement('p')
     const infobox7 = document.createElement('img')
-    const info7 = document.createElement('p')
+    const infotext7 = document.createElement('p')
     const infobox8 = document.createElement('img')
-    const info8 = document.createElement('p')
+    const infotext8 = document.createElement('p')
     const infobox9 = document.createElement('img')
-    const info9 = document.createElement('p')
+    const infotext9 = document.createElement('p')
     const infobox10 = document.createElement('img')
-    const info10 = document.createElement('p')
+    const infotext10 = document.createElement('p')
     const infobox11 = document.createElement('img')
-    const info11 = document.createElement('p')
+    const infotext11 = document.createElement('p')
     const infobox12 = document.createElement('img')
-    const info12 = document.createElement('p')
+    const infotext12 = document.createElement('p')
     const infobox13 = document.createElement('img')
-    const info13 = document.createElement('p')
+    const infotext13 = document.createElement('p')
     const infobox14 = document.createElement('img')
-    const info14 = document.createElement('p')
+    const infotext14 = document.createElement('p')
     const infobox15 = document.createElement('img')
-    const info15 = document.createElement('p')
+    const infotext15 = document.createElement('p')
     const infobox16 = document.createElement('img')
-    const info16 = document.createElement('p')
+    const infotext16 = document.createElement('p')
     const infobox17 = document.createElement('img')
-    const info17 = document.createElement('p')
+    const infotext17 = document.createElement('p')
     const infobox18 = document.createElement('img')
-    const info18 = document.createElement('p')
+    const infotext18 = document.createElement('p')
     const infobox19 = document.createElement('img')
-    const info19 = document.createElement('p')
+    const infotext19 = document.createElement('p')
     const infobox20 = document.createElement('img')
-    const info20 = document.createElement('p')
-
-    const infoboxCount = 20;
-
-    for (let i = 1; i <= infoboxCount; i++) {
-        const infobox = document.createElement('img');
-        infobox.src = 'Assets/infobox1.png';
-        infobox.setAttribute('class', 'infobox-' + i);
-        content.appendChild(infobox);
-    }
+    const infotext20 = document.createElement('p')
 
     mperf.src = 'Assets/mperf.png'
     linkedin.src = 'Assets/linkedin.png'
@@ -302,6 +297,47 @@ function m3Selection() {
     m32008.src = 'Assets/2008M3.png'
     m31995.src = 'Assets/1995M3.png'
     m31986.src = 'Assets/1986M3.png'
+    infobox1.src = 'Assets/infobox1.png'
+    infobox2.src = 'Assets/infobox1.png'
+    infobox3.src = 'Assets/infobox1.png'
+    infobox4.src = 'Assets/infobox1.png'
+    infobox5.src = 'Assets/infobox1.png'
+    infobox6.src = 'Assets/infobox1.png'
+    infobox7.src = 'Assets/infobox1.png'
+    infobox8.src = 'Assets/infobox1.png'
+    infobox9.src = 'Assets/infobox1.png'
+    infobox10.src = 'Assets/infobox1.png'
+    infobox11.src = 'Assets/infobox1.png'
+    infobox12.src = 'Assets/infobox1.png'
+    infobox13.src = 'Assets/infobox1.png'
+    infobox14.src = 'Assets/infobox1.png'
+    infobox15.src = 'Assets/infobox1.png'
+    infobox16.src = 'Assets/infobox1.png'
+    infobox17.src = 'Assets/infobox1.png'
+    infobox18.src = 'Assets/infobox1.png'
+    infobox19.src = 'Assets/infobox1.png'
+    infobox20.src = 'Assets/infobox1.png'
+
+    infotext1.textContent = 'Year'
+    infotext2.textContent = 'Engine'
+    infotext3.textContent = '473 Horsepower'
+    infotext4.textContent = 'transmission'
+    infotext5.textContent = 'Year'
+    infotext6.textContent = 'Engine'
+    infotext7.textContent = '425 Horsepower'
+    infotext8.textContent = 'transmission'
+    infotext9.textContent = 'Year'
+    infotext10.textContent = 'Engine'
+    infotext11.textContent = '414 Horsepower'
+    infotext12.textContent = 'transmission'
+    infotext13.textContent = 'Year'
+    infotext14.textContent = 'Engine'
+    infotext15.textContent = '240 Horsepower'
+    infotext16.textContent = 'transmission'
+    infotext17.textContent = 'Year'
+    infotext18.textContent = 'Engine'
+    infotext19.textContent = '200 Horsepower'
+    infotext20.textContent = 'transmission'
 
     content.setAttribute('class', 'contents')
     home.setAttribute('class', 'home')
@@ -317,13 +353,94 @@ function m3Selection() {
     mperf.setAttribute('class', 'mperf')
     linkedin.setAttribute('class', 'linked')
     github.setAttribute('class', 'git')
-
+    infobox1.setAttribute('class', 'infobox-1')
+    infotext1.setAttribute('class', 'infotext-1')
+    infobox2.setAttribute('class', 'infobox-2')
+    infotext2.setAttribute('class', 'infotext-2')
+    infobox3.setAttribute('class', 'infobox-3')
+    infotext3.setAttribute('class', 'infotext-3')
+    infobox4.setAttribute('class', 'infobox-4')
+    infotext4.setAttribute('class', 'infotext-4')
+    infobox5.setAttribute('class', 'infobox-5')
+    infotext5.setAttribute('class', 'infotext-5')
+    infobox6.setAttribute('class', 'infobox-6')
+    infotext6.setAttribute('class', 'infotext-6')
+    infobox7.setAttribute('class', 'infobox-7')
+    infotext7.setAttribute('class', 'infotext-7')
+    infobox8.setAttribute('class', 'infobox-8')
+    infotext8.setAttribute('class', 'infotext-8')
+    infobox9.setAttribute('class', 'infobox-9')
+    infotext9.setAttribute('class', 'infotext-9')
+    infobox10.setAttribute('class', 'infobox-10')
+    infotext10.setAttribute('class', 'infotext-10')
+    infobox11.setAttribute('class', 'infobox-11')
+    infotext11.setAttribute('class', 'infotext-11')
+    infobox12.setAttribute('class', 'infobox-12')
+    infotext12.setAttribute('class', 'infotext-12')
+    infobox13.setAttribute('class', 'infobox-13')
+    infotext13.setAttribute('class', 'infotext-13')
+    infobox14.setAttribute('class', 'infobox-14')
+    infotext14.setAttribute('class', 'infotext-14')
+    infobox15.setAttribute('class', 'infobox-15')
+    infotext15.setAttribute('class', 'infotext-15')
+    infobox16.setAttribute('class', 'infobox-16')
+    infotext16.setAttribute('class', 'infotext-16')
+    infobox17.setAttribute('class', 'infobox-17')
+    infotext17.setAttribute('class', 'infotext-17')
+    infobox18.setAttribute('class', 'infobox-18')
+    infotext18.setAttribute('class', 'infotext-18')
+    infobox19.setAttribute('class', 'infobox-19')
+    infotext19.setAttribute('class', 'infotext-19')
+    infobox20.setAttribute('class', 'infobox-20')
+    infotext20.setAttribute('class', 'infotext-20')
+    
     m3select.appendChild(menu)
-    content.appendChild(m32021)
-    content.appendChild(m32015)
-    content.appendChild(m32008)
-    content.appendChild(m31995)
-    content.appendChild(m31986)
+    content.appendChild(cars)
+    cars.appendChild(m32021)
+    cars.appendChild(m32015)
+    cars.appendChild(m32008)
+    cars.appendChild(m31995)
+    cars.appendChild(m31986)
+    cars.appendChild(infobox1)
+    cars.appendChild(infotext1)
+    cars.appendChild(infobox2)
+    cars.appendChild(infotext2)
+    cars.appendChild(infobox3)
+    cars.appendChild(infotext3)
+    cars.appendChild(infobox4)
+    cars.appendChild(infotext4)
+    cars.appendChild(infobox5)
+    cars.appendChild(infotext5)
+    cars.appendChild(infobox6)
+    cars.appendChild(infotext6)
+    cars.appendChild(infobox7)
+    cars.appendChild(infotext7)
+    cars.appendChild(infobox8)
+    cars.appendChild(infotext8)
+    cars.appendChild(infobox9)
+    cars.appendChild(infotext9)
+    cars.appendChild(infobox10)
+    cars.appendChild(infotext10)
+    cars.appendChild(infobox11)
+    cars.appendChild(infotext11)
+    cars.appendChild(infobox12)
+    cars.appendChild(infotext12)
+    cars.appendChild(infobox13)
+    cars.appendChild(infotext13)
+    cars.appendChild(infobox14)
+    cars.appendChild(infotext14)
+    cars.appendChild(infobox15)
+    cars.appendChild(infotext15)
+    cars.appendChild(infobox16)
+    cars.appendChild(infotext16)
+    cars.appendChild(infobox17)
+    cars.appendChild(infotext17)
+    cars.appendChild(infobox18)
+    cars.appendChild(infotext18)
+    cars.appendChild(infobox19)
+    cars.appendChild(infotext19)
+    cars.appendChild(infobox20)
+    cars.appendChild(infotext20)
     m3select.appendChild(aside)
     menu.appendChild(check)
     aside.appendChild(nav)
@@ -333,7 +450,6 @@ function m3Selection() {
     nav.appendChild(mperf)
     linkediv.appendChild(linkedin)
     gitdiv.appendChild(github)
-
 
     home.addEventListener('mouseenter', function () {
         home.style.transition = 'transform 0.3s ease';
@@ -392,60 +508,52 @@ function m5Selection(){
     const gitdiv = document.createElement('div')
     const github = document.createElement('img')
     const mperf = document.createElement('img')
+    const cars = document.createElement('div')
     const m52021 = document.createElement('img')
     const m52011 = document.createElement('img')
     const m52006 = document.createElement('img')
     const m51998 = document.createElement('img')
     const m51988 = document.createElement('img')
     const infobox1 = document.createElement('img')
-    const info1 = document.createElement('p')
+    const infotext1 = document.createElement('p')
     const infobox2 = document.createElement('img')
-    const info2 = document.createElement('p')
+    const infotext2 = document.createElement('p')
     const infobox3 = document.createElement('img')
-    const info3 = document.createElement('p')
+    const infotext3 = document.createElement('p')
     const infobox4 = document.createElement('img')
-    const info4 = document.createElement('p')
+    const infotext4 = document.createElement('p')
     const infobox5 = document.createElement('img')
-    const info5 = document.createElement('p')
+    const infotext5 = document.createElement('p')
     const infobox6 = document.createElement('img')
-    const info6 = document.createElement('p')
+    const infotext6 = document.createElement('p')
     const infobox7 = document.createElement('img')
-    const info7 = document.createElement('p')
+    const infotext7 = document.createElement('p')
     const infobox8 = document.createElement('img')
-    const info8 = document.createElement('p')
+    const infotext8 = document.createElement('p')
     const infobox9 = document.createElement('img')
-    const info9 = document.createElement('p')
+    const infotext9 = document.createElement('p')
     const infobox10 = document.createElement('img')
-    const info10 = document.createElement('p')
+    const infotext10 = document.createElement('p')
     const infobox11 = document.createElement('img')
-    const info11 = document.createElement('p')
+    const infotext11 = document.createElement('p')
     const infobox12 = document.createElement('img')
-    const info12 = document.createElement('p')
+    const infotext12 = document.createElement('p')
     const infobox13 = document.createElement('img')
-    const info13 = document.createElement('p')
+    const infotext13 = document.createElement('p')
     const infobox14 = document.createElement('img')
-    const info14 = document.createElement('p')
+    const infotext14 = document.createElement('p')
     const infobox15 = document.createElement('img')
-    const info15 = document.createElement('p')
+    const infotext15 = document.createElement('p')
     const infobox16 = document.createElement('img')
-    const info16 = document.createElement('p')
+    const infotext16 = document.createElement('p')
     const infobox17 = document.createElement('img')
-    const info17 = document.createElement('p')
+    const infotext17 = document.createElement('p')
     const infobox18 = document.createElement('img')
-    const info18 = document.createElement('p')
+    const infotext18 = document.createElement('p')
     const infobox19 = document.createElement('img')
-    const info19 = document.createElement('p')
+    const infotext19 = document.createElement('p')
     const infobox20 = document.createElement('img')
-    const info20 = document.createElement('p')
-
-    const infoboxCount = 20;
-
-    for (let i = 1; i <= infoboxCount; i++) {
-        const infobox = document.createElement('img');
-        infobox.src = 'Assets/infobox1.png';
-        infobox.setAttribute('class', 'infobox-5' + i);
-        content.appendChild(infobox);
-    }
+    const infotext20 = document.createElement('p')
 
     mperf.src = 'Assets/mperf.png'
     linkedin.src = 'Assets/linkedin.png'
@@ -456,6 +564,47 @@ function m5Selection(){
     m52006.src = 'Assets/2006M5.png'
     m51998.src = 'Assets/1998M5.png'
     m51988.src = 'Assets/1988M5.png'
+    infobox1.src = 'Assets/infobox1.png'
+    infobox2.src = 'Assets/infobox1.png'
+    infobox3.src = 'Assets/infobox1.png'
+    infobox4.src = 'Assets/infobox1.png'
+    infobox5.src = 'Assets/infobox1.png'
+    infobox6.src = 'Assets/infobox1.png'
+    infobox7.src = 'Assets/infobox1.png'
+    infobox8.src = 'Assets/infobox1.png'
+    infobox9.src = 'Assets/infobox1.png'
+    infobox10.src = 'Assets/infobox1.png'
+    infobox11.src = 'Assets/infobox1.png'
+    infobox12.src = 'Assets/infobox1.png'
+    infobox13.src = 'Assets/infobox1.png'
+    infobox14.src = 'Assets/infobox1.png'
+    infobox15.src = 'Assets/infobox1.png'
+    infobox16.src = 'Assets/infobox1.png'
+    infobox17.src = 'Assets/infobox1.png'
+    infobox18.src = 'Assets/infobox1.png'
+    infobox19.src = 'Assets/infobox1.png'
+    infobox20.src = 'Assets/infobox1.png'
+
+    infotext1.textContent = 'Year'
+    infotext2.textContent = 'Engine'
+    infotext3.textContent = '617 Horsepower'
+    infotext4.textContent = 'transmission'
+    infotext5.textContent = 'Year'
+    infotext6.textContent = 'Engine'
+    infotext7.textContent = '560 Horsepower'
+    infotext8.textContent = 'transmission'
+    infotext9.textContent = 'Year'
+    infotext10.textContent = 'Engine'
+    infotext11.textContent = '500 Horsepower'
+    infotext12.textContent = 'transmission'
+    infotext13.textContent = 'Year'
+    infotext14.textContent = 'Engine'
+    infotext15.textContent = '400 Horsepower'
+    infotext16.textContent = 'transmission'
+    infotext17.textContent = 'Year'
+    infotext18.textContent = 'Engine'
+    infotext19.textContent = '286 Horsepower'
+    infotext20.textContent = 'transmission'
 
     content.setAttribute('class', 'contents')
     m52021.setAttribute('class', 'M52021')
@@ -470,12 +619,93 @@ function m5Selection(){
     mperf.setAttribute('class', 'mperf')
     linkedin.setAttribute('class', 'linked')
     github.setAttribute('class', 'git')
+    infobox1.setAttribute('class', 'infobox-51')
+    infotext1.setAttribute('class', 'infotext-51')
+    infobox2.setAttribute('class', 'infobox-52')
+    infotext2.setAttribute('class', 'infotext-52')
+    infobox3.setAttribute('class', 'infobox-53')
+    infotext3.setAttribute('class', 'infotext-53')
+    infobox4.setAttribute('class', 'infobox-54')
+    infotext4.setAttribute('class', 'infotext-54')
+    infobox5.setAttribute('class', 'infobox-55')
+    infotext5.setAttribute('class', 'infotext-55')
+    infobox6.setAttribute('class', 'infobox-56')
+    infotext6.setAttribute('class', 'infotext-56')
+    infobox7.setAttribute('class', 'infobox-57')
+    infotext7.setAttribute('class', 'infotext-57')
+    infobox8.setAttribute('class', 'infobox-58')
+    infotext8.setAttribute('class', 'infotext-58')
+    infobox9.setAttribute('class', 'infobox-59')
+    infotext9.setAttribute('class', 'infotext-59')
+    infobox10.setAttribute('class', 'infobox-510')
+    infotext10.setAttribute('class', 'infotext-510')
+    infobox11.setAttribute('class', 'infobox-511')
+    infotext11.setAttribute('class', 'infotext-511')
+    infobox12.setAttribute('class', 'infobox-512')
+    infotext12.setAttribute('class', 'infotext-512')
+    infobox13.setAttribute('class', 'infobox-513')
+    infotext13.setAttribute('class', 'infotext-513')
+    infobox14.setAttribute('class', 'infobox-514')
+    infotext14.setAttribute('class', 'infotext-514')
+    infobox15.setAttribute('class', 'infobox-515')
+    infotext15.setAttribute('class', 'infotext-515')
+    infobox16.setAttribute('class', 'infobox-516')
+    infotext16.setAttribute('class', 'infotext-516')
+    infobox17.setAttribute('class', 'infobox-517')
+    infotext17.setAttribute('class', 'infotext-517')
+    infobox18.setAttribute('class', 'infobox-518')
+    infotext18.setAttribute('class', 'infotext-518')
+    infobox19.setAttribute('class', 'infobox-519')
+    infotext19.setAttribute('class', 'infotext-519')
+    infobox20.setAttribute('class', 'infobox-520')
+    infotext20.setAttribute('class', 'infotext-520')
 
-    content.appendChild(m52021)
-    content.appendChild(m52011)
-    content.appendChild(m52006)
-    content.appendChild(m51998)
-    content.appendChild(m51988)
+    content.appendChild(cars)
+    cars.appendChild(m52021)
+    cars.appendChild(m52011)
+    cars.appendChild(m52006)
+    cars.appendChild(m51998)
+    cars.appendChild(m51988)
+    cars.appendChild(infobox1)
+    cars.appendChild(infotext1)
+    cars.appendChild(infobox2)
+    cars.appendChild(infotext2)
+    cars.appendChild(infobox3)
+    cars.appendChild(infotext3)
+    cars.appendChild(infobox4)
+    cars.appendChild(infotext4)
+    cars.appendChild(infobox5)
+    cars.appendChild(infotext5)
+    cars.appendChild(infobox6)
+    cars.appendChild(infotext6)
+    cars.appendChild(infobox7)
+    cars.appendChild(infotext7)
+    cars.appendChild(infobox8)
+    cars.appendChild(infotext8)
+    cars.appendChild(infobox9)
+    cars.appendChild(infotext9)
+    cars.appendChild(infobox10)
+    cars.appendChild(infotext10)
+    cars.appendChild(infobox11)
+    cars.appendChild(infotext11)
+    cars.appendChild(infobox12)
+    cars.appendChild(infotext12)
+    cars.appendChild(infobox13)
+    cars.appendChild(infotext13)
+    cars.appendChild(infobox14)
+    cars.appendChild(infotext14)
+    cars.appendChild(infobox15)
+    cars.appendChild(infotext15)
+    cars.appendChild(infobox16)
+    cars.appendChild(infotext16)
+    cars.appendChild(infobox17)
+    cars.appendChild(infotext17)
+    cars.appendChild(infobox18)
+    cars.appendChild(infotext18)
+    cars.appendChild(infobox19)
+    cars.appendChild(infotext19)
+    cars.appendChild(infobox20)
+    cars.appendChild(infotext20)
     m5select.appendChild(menu)
     menu.appendChild(check)
     m5select.appendChild(aside)
@@ -486,11 +716,6 @@ function m5Selection(){
     nav.appendChild(mperf)
     linkediv.appendChild(linkedin)
     gitdiv.appendChild(github)
-
-    home.addEventListener('click', function () {
-        m5select.innerHTML = ""
-        selectionView();
-    })
 
     home.addEventListener('mouseenter', function () {
         home.style.transition = 'transform 0.3s ease';
@@ -503,7 +728,7 @@ function m5Selection(){
     });
 
     home.addEventListener('click', function () {
-        m3select.innerHTML = ""
+        m5select.innerHTML = ""
         selectionView();
     })
 
