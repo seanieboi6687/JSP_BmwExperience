@@ -1,3 +1,23 @@
+let m3data = ""
+fetch('https://api.api-ninjas.com/v1/cars?limit=50&make=bmw&model=m3',
+    {
+        method: 'GET', headers: { 'X-Api-Key': 'Jil/7AwXZkQWT1pB2gd3ng==p505GX4x3Sd7ljwe' }
+    }).then(response => {
+        if (!response.ok) { throw new Error('response not okay') } return response.json()
+    }).then(result => {
+        m3data = result
+    }).catch(error => { console.error('Error', error) })
+
+let m5data = ""
+fetch('https://api.api-ninjas.com/v1/cars?limit=50&make=bmw&model=m5',
+    {
+        method: 'GET', headers: { 'X-Api-Key': 'Jil/7AwXZkQWT1pB2gd3ng==p505GX4x3Sd7ljwe' }
+    }).then(response => {
+        if (!response.ok) { throw new Error('response not okay') } return response.json()
+    }).then(result => {
+        m5data = result
+    }).catch(error => { console.error('Error', error) })
+
 function renderInitialView(){
     const preMain = document.getElementById('premain')
     const heading = document.createElement('h1')
@@ -32,7 +52,7 @@ function renderInitialView(){
     enterButton.textContent = 'ENTER'
 
     preMain.appendChild(heading);
-    preMain.appendChild(warning); // Move this line here, outside of the heading element
+    preMain.appendChild(warning);
     preMain.appendChild(enterButton);
     preMain.appendChild(volumeclick);
     preMain.appendChild(unmuted);
@@ -287,6 +307,88 @@ function m3Selection() {
     const infotext19 = document.createElement('p')
     const infobox20 = document.createElement('img')
     const infotext20 = document.createElement('p')
+    
+    const engine1 = document.createElement('img')
+    const engine2 = document.createElement('img')
+    const engine3 = document.createElement('img')
+    const engine4 = document.createElement('img')
+    const engine5 = document.createElement('img')
+    const trans1 = document.createElement('img')
+    const trans2 = document.createElement('img')
+    const trans3 = document.createElement('img')
+    const trans4 = document.createElement('img')
+    const trans5 = document.createElement('img')
+    const hp1 = document.createElement('img')
+    const hp2 = document.createElement('img')
+    const hp3 = document.createElement('img')
+    const hp4 = document.createElement('img')
+    const hp5 = document.createElement('img')
+    const yr1 = document.createElement('img')
+    const yr2 = document.createElement('img')
+    const yr3 = document.createElement('img')
+    const yr4 = document.createElement('img')
+    const yr5 = document.createElement('img')
+    engine1.setAttribute('class', 'engineimg1')
+    engine2.setAttribute('class', 'engineimg2')
+    engine3.setAttribute('class', 'engineimg3')
+    engine4.setAttribute('class', 'engineimg4')
+    engine5.setAttribute('class', 'engineimg5')
+    trans1.setAttribute('class', 'transimg1')
+    trans2.setAttribute('class', 'transimg2')
+    trans3.setAttribute('class', 'transimg3')
+    trans4.setAttribute('class', 'transimg4')
+    trans5.setAttribute('class', 'transimg5')
+    hp1.setAttribute('class', 'hpimg1')
+    hp2.setAttribute('class', 'hpimg2')
+    hp3.setAttribute('class', 'hpimg3')
+    hp4.setAttribute('class', 'hpimg4')
+    hp5.setAttribute('class', 'hpimg5')
+    yr1.setAttribute('class', 'yrimg1')
+    yr2.setAttribute('class', 'yrimg2')
+    yr3.setAttribute('class', 'yrimg3')
+    yr4.setAttribute('class', 'yrimg4')
+    yr5.setAttribute('class', 'yrimg5')
+    engine1.src = 'Assets/engine.png'
+    engine2.src = 'Assets/engine.png'
+    engine3.src = 'Assets/engine.png'
+    engine4.src = 'Assets/engine.png'
+    engine5.src = 'Assets/engine.png'
+    trans1.src = 'Assets/transmission.png'
+    trans2.src = 'Assets/transmission.png'
+    trans3.src = 'Assets/transmission.png'
+    trans4.src = 'Assets/transmission.png'
+    trans5.src = 'Assets/transmission.png'
+    hp1.src = 'Assets/hp.png'
+    hp2.src = 'Assets/hp.png'
+    hp3.src = 'Assets/hp.png'
+    hp4.src = 'Assets/hp.png'
+    hp5.src = 'Assets/hp.png'
+    yr1.src = 'Assets/year.png'
+    yr2.src = 'Assets/year.png'
+    yr3.src = 'Assets/year.png'
+    yr4.src = 'Assets/year.png'
+    yr5.src = 'Assets/year.png'
+    cars.appendChild(engine1)
+    cars.appendChild(engine2)
+    cars.appendChild(engine3)
+    cars.appendChild(engine4)
+    cars.appendChild(engine5)
+    cars.appendChild(trans1)
+    cars.appendChild(trans2)
+    cars.appendChild(trans3)
+    cars.appendChild(trans4)
+    cars.appendChild(trans5)
+    cars.appendChild(hp1)
+    cars.appendChild(hp2)
+    cars.appendChild(hp3)
+    cars.appendChild(hp4)
+    cars.appendChild(hp5)
+    cars.appendChild(yr1)
+    cars.appendChild(yr2)
+    cars.appendChild(yr3)
+    cars.appendChild(yr4)
+    cars.appendChild(yr5)
+
 
     mperf.src = 'Assets/mperf.png'
     linkedin.src = 'Assets/linkedin.png'
@@ -318,26 +420,26 @@ function m3Selection() {
     infobox19.src = 'Assets/infobox1.png'
     infobox20.src = 'Assets/infobox1.png'
 
-    infotext1.textContent = 'Year'
-    infotext2.textContent = 'Engine'
+    infotext1.textContent = '2021'
+    infotext2.textContent = 'S58 Twin-Turbo Inline 6'
     infotext3.textContent = '473 Horsepower'
-    infotext4.textContent = 'transmission'
-    infotext5.textContent = 'Year'
-    infotext6.textContent = 'Engine'
+    infotext4.textContent = '6Spd Manual/8Spd Auto'
+    infotext5.textContent = '2015'
+    infotext6.textContent = 'S55 Twin-Turbo Inline 6'
     infotext7.textContent = '425 Horsepower'
-    infotext8.textContent = 'transmission'
-    infotext9.textContent = 'Year'
-    infotext10.textContent = 'Engine'
+    infotext8.textContent = '6Spd Manual/8Spd Auto'
+    infotext9.textContent =  `${m3data[32]['year']}`
+    infotext10.textContent = `S65 V${m3data[32]['cylinders']}`
     infotext11.textContent = '414 Horsepower'
-    infotext12.textContent = 'transmission'
-    infotext13.textContent = 'Year'
-    infotext14.textContent = 'Engine'
+    infotext12.textContent = '6Spd Manual/7Spd Auto'
+    infotext13.textContent = `${m3data[0]['year']}`
+    infotext14.textContent = `S50 V${m3data[0]['cylinders']}`
     infotext15.textContent = '240 Horsepower'
-    infotext16.textContent = 'transmission'
-    infotext17.textContent = 'Year'
-    infotext18.textContent = 'Engine'
+    infotext16.textContent = '5Spd Manual'
+    infotext17.textContent = '1986'
+    infotext18.textContent = 'S14 Inline 4'
     infotext19.textContent = '200 Horsepower'
-    infotext20.textContent = 'transmission'
+    infotext20.textContent = '5Spd Manual'
 
     content.setAttribute('class', 'contents')
     home.setAttribute('class', 'home')
@@ -555,6 +657,87 @@ function m5Selection(){
     const infobox20 = document.createElement('img')
     const infotext20 = document.createElement('p')
 
+    const engine1 = document.createElement('img')
+    const engine2 = document.createElement('img')
+    const engine3 = document.createElement('img')
+    const engine4 = document.createElement('img')
+    const engine5 = document.createElement('img')
+    const trans1 = document.createElement('img')
+    const trans2 = document.createElement('img')
+    const trans3 = document.createElement('img')
+    const trans4 = document.createElement('img')
+    const trans5 = document.createElement('img')
+    const hp1 = document.createElement('img')
+    const hp2 = document.createElement('img')
+    const hp3 = document.createElement('img')
+    const hp4 = document.createElement('img')
+    const hp5 = document.createElement('img')
+    const yr1 = document.createElement('img')
+    const yr2 = document.createElement('img')
+    const yr3 = document.createElement('img')
+    const yr4 = document.createElement('img')
+    const yr5 = document.createElement('img')
+    engine1.setAttribute('class', 'engineimg51')
+    engine2.setAttribute('class', 'engineimg52')
+    engine3.setAttribute('class', 'engineimg53')
+    engine4.setAttribute('class', 'engineimg54')
+    engine5.setAttribute('class', 'engineimg55')
+    trans1.setAttribute('class', 'transimg51')
+    trans2.setAttribute('class', 'transimg52')
+    trans3.setAttribute('class', 'transimg53')
+    trans4.setAttribute('class', 'transimg54')
+    trans5.setAttribute('class', 'transimg55')
+    hp1.setAttribute('class', 'hpimg51')
+    hp2.setAttribute('class', 'hpimg52')
+    hp3.setAttribute('class', 'hpimg53')
+    hp4.setAttribute('class', 'hpimg54')
+    hp5.setAttribute('class', 'hpimg55')
+    yr1.setAttribute('class', 'yrimg51')
+    yr2.setAttribute('class', 'yrimg52')
+    yr3.setAttribute('class', 'yrimg53')
+    yr4.setAttribute('class', 'yrimg54')
+    yr5.setAttribute('class', 'yrimg55')
+    engine1.src = 'Assets/engine.png'
+    engine2.src = 'Assets/engine.png'
+    engine3.src = 'Assets/engine.png'
+    engine4.src = 'Assets/engine.png'
+    engine5.src = 'Assets/engine.png'
+    trans1.src = 'Assets/transmission.png'
+    trans2.src = 'Assets/transmission.png'
+    trans3.src = 'Assets/transmission.png'
+    trans4.src = 'Assets/transmission.png'
+    trans5.src = 'Assets/transmission.png'
+    hp1.src = 'Assets/hp.png'
+    hp2.src = 'Assets/hp.png'
+    hp3.src = 'Assets/hp.png'
+    hp4.src = 'Assets/hp.png'
+    hp5.src = 'Assets/hp.png'
+    yr1.src = 'Assets/year.png'
+    yr2.src = 'Assets/year.png'
+    yr3.src = 'Assets/year.png'
+    yr4.src = 'Assets/year.png'
+    yr5.src = 'Assets/year.png'
+    cars.appendChild(engine1)
+    cars.appendChild(engine2)
+    cars.appendChild(engine3)
+    cars.appendChild(engine4)
+    cars.appendChild(engine5)
+    cars.appendChild(trans1)
+    cars.appendChild(trans2)
+    cars.appendChild(trans3)
+    cars.appendChild(trans4)
+    cars.appendChild(trans5)
+    cars.appendChild(hp1)
+    cars.appendChild(hp2)
+    cars.appendChild(hp3)
+    cars.appendChild(hp4)
+    cars.appendChild(hp5)
+    cars.appendChild(yr1)
+    cars.appendChild(yr2)
+    cars.appendChild(yr3)
+    cars.appendChild(yr4)
+    cars.appendChild(yr5)
+
     mperf.src = 'Assets/mperf.png'
     linkedin.src = 'Assets/linkedin.png'
     github.src = 'Assets/github.png'
@@ -585,26 +768,30 @@ function m5Selection(){
     infobox19.src = 'Assets/infobox1.png'
     infobox20.src = 'Assets/infobox1.png'
 
-    infotext1.textContent = 'Year'
-    infotext2.textContent = 'Engine'
-    infotext3.textContent = '617 Horsepower'
-    infotext4.textContent = 'transmission'
-    infotext5.textContent = 'Year'
-    infotext6.textContent = 'Engine'
+    infotext1.textContent = `${m5data[36]['year']}`
+    infotext2.textContent = `S63 Twin-Turbo V${m5data[36]['cylinders']}`
+    infotext3.textContent = '600 Horsepower'
+    infotext4.textContent = '8Spd Auto'
+
+    infotext5.textContent = `${m5data[13]['year']}`
+    infotext6.textContent = `S63 Twin-Turbo V${m5data[13]['cylinders']}`
     infotext7.textContent = '560 Horsepower'
-    infotext8.textContent = 'transmission'
-    infotext9.textContent = 'Year'
-    infotext10.textContent = 'Engine'
+    infotext8.textContent = '7Spd Dual Clutch/6Spd Manual'
+
+    infotext9.textContent = `${m5data[4]['year']}`
+    infotext10.textContent = `S85 Twin-Turbo V${m5data[4]['cylinders']}`
     infotext11.textContent = '500 Horsepower'
-    infotext12.textContent = 'transmission'
-    infotext13.textContent = 'Year'
-    infotext14.textContent = 'Engine'
+    infotext12.textContent = '7Spd SMG-III/6Spd Manual'
+
+    infotext13.textContent = '1998'
+    infotext14.textContent = 'S62 V8'
     infotext15.textContent = '400 Horsepower'
-    infotext16.textContent = 'transmission'
-    infotext17.textContent = 'Year'
-    infotext18.textContent = 'Engine'
+    infotext16.textContent = '6Spd Manual'
+
+    infotext17.textContent = '1988'
+    infotext18.textContent = 'S38 Inline 6'
     infotext19.textContent = '286 Horsepower'
-    infotext20.textContent = 'transmission'
+    infotext20.textContent = '5Spd Manual'
 
     content.setAttribute('class', 'contents')
     m52021.setAttribute('class', 'M52021')

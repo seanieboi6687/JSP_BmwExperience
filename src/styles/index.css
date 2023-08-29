@@ -496,13 +496,13 @@ p {
     position: absolute;
     left: 10%;
     width: 30%;
-    top: 57%;
+    top: 56%;
 }
 .infotext-4 {
     font-size: 28px;
     position: absolute;
     left: 20%;
-    top: 56.5%;
+    top: 55.5%;
     color: black;
 }
 
@@ -533,8 +533,9 @@ p {
 .infotext-6 {
     font-size: 28px;
     position: absolute;
-    left: 120%;
-    top: 2.5%;
+    left: 119%;
+    top: 1%;
+    width: 14%;
     color: black;
 }
 
@@ -566,8 +567,9 @@ p {
 .infotext-8 {
     font-size: 28px;
     position: absolute;
-    left: 120%;
-    top: 56.5%;
+    left: 119%;
+    top: 55%;
+    width: 16%;
     color: black;
 }
 
@@ -598,8 +600,9 @@ p {
 .infotext-10 {
     font-size: 28px;
     position: absolute;
-    left: 220%;
+    left: 219%;
     top: 2.5%;
+    width: 7%;
     color: black;
 }
 
@@ -631,8 +634,9 @@ p {
 .infotext-12 {
     font-size: 28px;
     position: absolute;
-    left: 220%;
-    top: 56.5%;
+    left: 219%;
+    top: 55%;
+    width: 16%;
     color: black;
 }
 
@@ -663,8 +667,9 @@ p {
 .infotext-14 {
     font-size: 28px;
     position: absolute;
-    left: 320%;
+    left: 319%;
     top: 2.5%;
+    width: 7%;
     color: black;
 }
 
@@ -698,6 +703,7 @@ p {
     position: absolute;
     left: 320%;
     top: 56.5%;
+    width: 10%;
     color: black;
 }
 
@@ -728,8 +734,9 @@ p {
 .infotext-18 {
     font-size: 28px;
     position: absolute;
-    left: 420%;
+    left: 419.5%;
     top: 2.5%;
+    width: 10%;
     color: black;
 }
 
@@ -761,8 +768,9 @@ p {
 .infotext-20 {
     font-size: 28px;
     position: absolute;
-    left: 420%;
+    left: 419%;
     top: 56.5%;
+    width: 12%;
     color: black;
 }
 
@@ -770,15 +778,16 @@ p {
     display: flex;
     animation: fade-in 3s ease forwards;
     position: absolute;
-    left: 20%;
+    margin-left: 20vw;
     width: 30%;
-    top: 21%;
+    margin-top: 12vw;
 }
 .infotext-51 {
+    display: flex;
     font-size: 28px;
     position: absolute;
-    left: 30%;
-    top: 20.5%;
+    margin-left: 30vw;
+    margin-top: 15.3vw;
     color: black;
 }
 
@@ -786,15 +795,15 @@ p {
     display: flex;
     animation: fade-in 3s ease forwards;
     position: absolute;
-    left: 20%;
+    margin-left: 20vw;
     width: 30%;
-    top: 3%;
+    margin-top: 2vw;
 }
 .infotext-52 {
     font-size: 28px;
     position: absolute;
-    left: 30%;
-    top: 2.5%;
+    margin-left: 30vw;
+    margin-top: 5.3vw;
     color: black;
 }
 
@@ -802,15 +811,15 @@ p {
     display: flex;
     animation: fade-in 3s ease forwards;
     position: absolute;
-    left: 20%;
+    margin-left: 20vw;
     width: 30%;
-    top: 39%;
+    margin-top: 22vw;
 }
 .infotext-53 {
     font-size: 28px;
     position: absolute;
-    left: 30%;
-    top: 38.5%;
+    margin-left: 30vw;
+    margin-top: 25.3vw;
     color: black;
 }
 
@@ -818,15 +827,15 @@ p {
     display: flex;
     animation: fade-in 3s ease forwards;
     position: absolute;
-    left: 20%;
+    margin-left: 20vw;
     width: 30%;
-    top: 57%;
+    margin-top: 32vw;
 }
 .infotext-54 {
     font-size: 28px;
     position: absolute;
-    left: 30%;
-    top: 56.5%;
+    margin-left: 30vw;
+    margin-top: 35.3vw;
     color: black;
 }
 
@@ -834,15 +843,15 @@ p {
     display: flex;
     animation: fade-in 3s ease forwards;
     position: absolute;
-    left: 140%;
+    margin-left: 140vw;
     width: 30%;
-    top: 21%;
+    margin-top: 12vw;
 }
 .infotext-55 {
     font-size: 28px;
     position: absolute;
-    left: 150%;
-    top: 20.5%;
+    margin-left: 150vw;
+    margin-top: 15.3vw;
     color: black;
 }
 
@@ -850,15 +859,16 @@ p {
     display: flex;
     animation: fade-in 3s ease forwards;
     position: absolute;
-    left: 140%;
+    margin-left: 140vw;
     width: 30%;
-    top: 3%;
+    margin-top: 2.3vw;
 }
 .infotext-56 {
     font-size: 28px;
     position: absolute;
-    left: 150%;
-    top: 2.5%;
+    margin-left: 150vw;
+    margin-top: 5.5vw;
+    width: 14%;
     color: black;
 }
 
@@ -866,15 +876,15 @@ p {
     display: flex;
     animation: fade-in 3s ease forwards;
     position: absolute;
-    left: 140%;
+    margin-left: 140vw;
     width: 30%;
-    top: 39%;
+    margin-top: 22vw;
 }
 .infotext-57 {
     font-size: 28px;
     position: absolute;
-    left: 150%;
-    top: 38.5%;
+    margin-left: 150vw;
+    margin-top: 25.3vw;
     width: 12%;
     color: black;
 }
@@ -883,15 +893,16 @@ p {
     display: flex;
     animation: fade-in 3s ease forwards;
     position: absolute;
-    left: 140%;
+    margin-left: 140vw;
     width: 30%;
-    top: 57%;
+    margin-top: 32vw;
 }
 .infotext-58 {
     font-size: 28px;
     position: absolute;
-    left: 150%;
-    top: 56.5%;
+    margin-left: 150vw;
+    margin-top: 34.2vw;
+    width: 16%;
     color: black;
 }
 
@@ -899,15 +910,15 @@ p {
     display: flex;
     animation: fade-in 3s ease forwards;
     position: absolute;
-    left: 250%;
+    margin-left: 250vw;
     width: 30%;
-    top: 21%;
+    margin-top: 12.3vw;
 }
 .infotext-59 {
     font-size: 28px;
     position: absolute;
-    left: 260%;
-    top: 20.5%;
+    margin-left: 260vw;
+    margin-top: 15.5vw;
     color: black;
 }
 
@@ -915,15 +926,16 @@ p {
     display: flex;
     animation: fade-in 3s ease forwards;
     position: absolute;
-    left: 250%;
+    margin-left: 250vw;
     width: 30%;
-    top: 3%;
+    margin-top: 2.3vw;
 }
 .infotext-510 {
     font-size: 28px;
     position: absolute;
-    left: 260%;
-    top: 2.5%;
+    margin-left: 259.5vw;
+    margin-top: 5.5vw;
+    width: 16%;
     color: black;
 }
 
@@ -931,15 +943,15 @@ p {
     display: flex;
     animation: fade-in 3s ease forwards;
     position: absolute;
-    left: 250%;
+    margin-left: 250vw;
     width: 30%;
-    top: 39%;
+    margin-top: 22.5vw;
 }
 .infotext-511 {
     font-size: 28px;
     position: absolute;
-    left: 260%;
-    top: 38.5%;
+    margin-left: 260vw;
+    margin-top: 25.75vw;
     width: 12%;
     color: black;
 }
@@ -948,15 +960,16 @@ p {
     display: flex;
     animation: fade-in 3s ease forwards;
     position: absolute;
-    left: 250%;
+    margin-left: 250vw;
     width: 30%;
-    top: 57%;
+    margin-top: 32.5vw;
 }
 .infotext-512 {
     font-size: 28px;
     position: absolute;
-    left: 260%;
-    top: 56.5%;
+    margin-left: 258vw;
+    margin-top: 34.75vw;
+    width: 18%;
     color: black;
 }
 
@@ -988,7 +1001,8 @@ p {
     font-size: 28px;
     position: absolute;
     left: 360%;
-    top: 2.5%;
+    top: 3%;
+    width: 6%;
     color: black;
 }
 
@@ -1022,6 +1036,7 @@ p {
     position: absolute;
     left: 360%;
     top: 56.5%;
+    width: 10%;
     color: black;
 }
 
@@ -1029,14 +1044,14 @@ p {
     display: flex;
     animation: fade-in 3s ease forwards;
     position: absolute;
-    left: 455%;
+    left: 460%;
     width: 30%;
     top: 21%;
 }
 .infotext-517 {
     font-size: 28px;
     position: absolute;
-    left: 465%;
+    left: 470%;
     top: 20.5%;
     color: black;
 }
@@ -1045,15 +1060,16 @@ p {
     display: flex;
     animation: fade-in 3s ease forwards;
     position: absolute;
-    left: 455%;
+    left: 460%;;
     width: 30%;
     top: 3%;
 }
 .infotext-518 {
     font-size: 28px;
     position: absolute;
-    left: 465%;
+    left: 469.5%;
     top: 2.5%;
+    width: 10%;
     color: black;
 }
 
@@ -1061,14 +1077,14 @@ p {
     display: flex;
     animation: fade-in 3s ease forwards;
     position: absolute;
-    left: 455%;
+    left: 460%;
     width: 30%;
     top: 39%;
 }
 .infotext-519 {
     font-size: 28px;
     position: absolute;
-    left: 465%;
+    left: 470%;
     top: 38.5%;
     width: 12%;
     color: black;
@@ -1078,19 +1094,441 @@ p {
     display: flex;
     animation: fade-in 3s ease forwards;
     position: absolute;
-    left: 455%;
+    left: 460%;
     width: 30%;
     top: 57%;
 }
 .infotext-520 {
     font-size: 28px;
     position: absolute;
-    left: 465%;
+    left: 470%;
     top: 56.5%;
+    width: 10%;
     color: black;
 }
 
+/* M3 ICONS */
+.engineimg1 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 12.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 7%;
+}
+.engineimg2 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 112.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 7%;
+}
+.engineimg3 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 212.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 7%;
+}
+.engineimg4 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 312.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 7%;
+}
+.engineimg5 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 412.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 7%;
+}
+.transimg1 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 12.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 60%;
+}
+.transimg2 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 112.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 61%;
+}
+.transimg3 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 212.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 61%;
+}
+.transimg4 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 312.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 61%;
+}
+.transimg5 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 412.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 61%;
+}
+.hpimg1 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 12.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 45%;
+}
+.hpimg2 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 112.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 45%;
+}
+.hpimg3 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 212.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 45%;
+}
+.hpimg4 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 312.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 45%;
+}
+.hpimg5 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 412.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 45%;
+}
+.yrimg1 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 12.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 25%;
+}
+.yrimg2 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 112.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 25%;
+}
+.yrimg3 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 212.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 25%;
+}
+.yrimg4 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 312.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 25%;
+}
+.yrimg5 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 412.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 25%;
+}
 
+/* M5 ICONS */
+.engineimg51 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 22.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 7%;
+}
+
+.engineimg52 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 142.74%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 8%;
+}
+
+.engineimg53 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 252.7%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 8%;
+}
+
+.engineimg54 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 352.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 7%;
+}
+
+.engineimg55 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 462.5%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 7%;
+}
+
+.transimg51 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 22.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 61%;
+}
+
+.transimg52 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 142.8%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 61%;
+}
+
+.transimg53 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 252.7%; 
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 62.5%;
+}
+
+.transimg54 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 352.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 60.5%;
+}
+
+.transimg55 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 462.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 60.5%;
+}
+
+.hpimg51 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 22.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 45%;
+}
+
+.hpimg52 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 142.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 45%;
+}
+
+.hpimg53 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 252.7%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 46%;
+}
+
+.hpimg54 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 352.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 44%;
+}
+
+.hpimg55 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 462.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 44.5%;
+}
+
+.yrimg51 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 22.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 25%;
+}
+
+.yrimg52 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 142.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 25%;
+}
+
+.yrimg53 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 252.7%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 25.5%;
+}
+
+.yrimg54 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 352.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 24.5%;
+}
+
+.yrimg55 {
+    display: flex;
+    animation: fade-in 3s ease forwards;
+    position: absolute;
+    left: 462.75%;
+    z-index: 1;
+    width: 4.5%;
+    height: auto;
+    top: 24.5%;
+}
 html {
     scroll-snap-type: x mandatory;
 }
