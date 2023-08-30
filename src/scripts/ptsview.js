@@ -87,4 +87,24 @@ function backgroundMusic() {
     music.play();
 }
 
+function fadeInAudio(audio, duration) {
+    const fadeDuration = duration * 1000;
+    const fadeSteps = 50;
+    const initialVolume = 0;
+
+    audio.volume = initialVolume;
+
+    const volumeStep = 1 / fadeSteps;
+    let currentStep = 0;
+
+    const fadeInInterval = setInterval(() => {
+        if (currentStep >= fadeSteps) {
+            clearInterval(fadeInInterval);
+        } else {
+            currentStep++;
+            audio.volume = currentStep * volumeStep;
+        }
+    }, fadeDuration / fadeSteps);
+}
+
 export default ptsView;
