@@ -28,10 +28,6 @@ function renderInitialView(){
     preMain.appendChild(background);
     preMain.appendChild(aA);
     
-    const friday1 = new Audio('Assets/intro.mp3')
-    setTimeout(() => {
-        friday1.play();
-    }, 1000)
 
     enterButton.addEventListener('click', function () {
         preMain.innerHTML = '';
@@ -50,6 +46,10 @@ function playClickSound() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    const friday1 = new Audio('Assets/intro.mp3')
+    setTimeout(() => {
+        friday1.play();
+    }, 1000)
     renderInitialView();
 });
 
