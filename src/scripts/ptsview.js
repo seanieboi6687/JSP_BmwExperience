@@ -27,7 +27,7 @@ function ptsView() {
 
     const friday2 = new Audio('Assets/pts.mp3')
 
-    // backgroundMusic();
+    backgroundMusic();
 
     video.addEventListener('ended', function () {
         setTimeout(() => {
