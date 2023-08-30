@@ -18,13 +18,15 @@ After a short video, not shown on the screenshot, the 'Start Stop' button will f
 
 Model Selection Page:
 
-![Selectionpage](https://github.com/seanieboi6687/JSP_BmwExperience/assets/101304652/bb75fe6b-44e5-49a5-a332-ac61fe289064)
+/Users/sean/Desktop/App Academy/JSP/Assets/selectionpage.gif
 
 One of the M3 model Pages:
 
-There will be layers of images to implement a parallax scrolling effect.
+/Users/sean/Desktop/App Academy/JSP/Assets/m3page.gif
 
-![m3screen](https://github.com/seanieboi6687/JSP_BmwExperience/assets/101304652/6dd64838-5538-4582-b539-87856a865c83)
+Dynamic Hamburger Menu/Nav
+
+/Users/sean/Desktop/App Academy/JSP/Assets/video3.gif
 
 Main Car Display Page Wireframe:
 
