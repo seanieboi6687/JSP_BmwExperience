@@ -28,7 +28,7 @@ function renderInitialView(){
     preMain.appendChild(background);
     preMain.appendChild(aA);
     
-
+    const friday1 = new Audio('Assets/intro.mp3')
     enterButton.addEventListener('click', function () {
         preMain.innerHTML = '';
         ptsView();
