@@ -18,19 +18,33 @@ After a short video, not shown on the screenshot, the 'Start Stop' button will f
 
 Model Selection Page:
 
-/Users/sean/Desktop/App Academy/JSP/Assets/selectionpage.gif
+![selectionpage](https://github.com/seanieboi6687/JSP_BmwExperience/assets/101304652/f04872f4-b8f5-45ff-a2ac-1cc077759845)
 
 One of the M3 model Pages:
 
-/Users/sean/Desktop/App Academy/JSP/Assets/m3page.gif
+![m3page](https://github.com/seanieboi6687/JSP_BmwExperience/assets/101304652/abe65bff-26bd-42da-b4e4-776bb480abff)
 
-Dynamic Hamburger Menu/Nav
+Dynamic Hamburger Menu/Nav:
 
-/Users/sean/Desktop/App Academy/JSP/Assets/video3.gif
+![menu](https://github.com/seanieboi6687/JSP_BmwExperience/assets/101304652/267b7040-eb10-459b-987c-9e58d94f1700)
+
+Hamburger Menu/Nav Codes:
+
+<img width="576" alt="hamburger transition" src="https://github.com/seanieboi6687/JSP_BmwExperience/assets/101304652/c3e0a53f-ed48-4d35-a254-413ff4a20054">
+
+Home Button Codes:
+
+<img width="575" alt="home button function" src="https://github.com/seanieboi6687/JSP_BmwExperience/assets/101304652/62823323-b2a6-4f14-9bac-88ce30f97c26">
+
+API Data Fetch:
+
+<img width="655" alt="API Data Fetch" src="https://github.com/seanieboi6687/JSP_BmwExperience/assets/101304652/ef016d43-d16b-4196-bd3b-8e6cbee268d0">
 
 Main Car Display Page Wireframe:
 
 ![Screenshot 2023-08-23 at 9 20 29 PM](https://github.com/seanieboi6687/JSP_BmwExperience/assets/101304652/65ba2cc4-1df3-4930-bb3d-86c77b8b4b29)
+
+
 
 Functionality & MVPs:
 
